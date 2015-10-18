@@ -1,0 +1,17 @@
+.show {
+	@include transform(translateY(200px));
+	@include animation(fadeIn 0.8s ease forwards);
+}
+.seen {
+  @include transform(translateY(0));
+	@include animation(none);
+}
+.show:nth-child(odd) {
+  animation-duration: 0.6s;
+}
+
+@include keyframes(fadeIn) {
+  to {
+    @include transform(translateY(0));
+  }
+}

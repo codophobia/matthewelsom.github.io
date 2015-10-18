@@ -1,0 +1,43 @@
+---
+title: About
+layout: base
+main-id: about
+---
+
+<section>
+  <div>
+    <article class="col-12 col-t10">
+      <h6 class="type">About</h6> <hr>
+      <h2>Passionate about <em>user-centered design</em> and <em>style-guide driven development</em>, I fuse creative ideas with user experience methodology to deliver <a class="text" href="{{ site.baseurl }}/portfolio.html" title="Digital Strategy">digital strategy</a>, <a class="text" href="{{ site.baseurl }}/portfolio.html" title="Web Experiences">bespoke web experiences</a>, and <a class="text" href="{{ site.baseurl }}/portfolio.html" title="Mobile Solutions">mobile solutions</a>.</h2>
+      <p>For the past 10 years I have worked with creative teams in London, Tokyo, and Singapore developing enterprise level applications for Multinational &amp; Fortune 500 corporations.</p>
+      <p>You can see my technical fixes on <a href="http://codepen.io/matthewelsom/" target="_blank" class="text ext" ><i class="fa fa-codepen"></i> Codepen</a> or ask for some free help on <a href="http://stackoverflow.com/users/4925187/matthewelsom" class="text ext"><i class="fa fa-stack-overflow"></i> Stack Overflow</a>.</p>
+      <a class="cta" href="{{ site.baseurl }}/portfolio.html" title="View my work"><h6><span>View my work</span> <img src="{{ site.baseurl }}/assets/img/arrow-blue.png"></h6></a>
+     </article>
+  </div>
+  <div class="hi"></div>
+  <div class="hi"></div>
+  <div class="hi"></div>
+  <div class="hi"></div>
+</section>
+
+<div class="instabanner">
+  <a href="https://instagram.com/matthewelsom/" target="_blank"><h6><i class="fa fa-instagram"></i> Instagram</h6></a>
+</div>
+  <div id="instafeed"></div>
+</main>
+
+
+<script src="assets/js/libs/instagram.js"></script>
+<script type="text/javascript">
+  var userFeed = new Instafeed({
+    get: 'user',
+    userId: 623597756,
+    accessToken: '623597756.467ede5.3f043d48217f49229979dea9ab5515fb',
+    resolution: 'standard_resolution',
+    template: '<a href="https://instagram.com/matthewelsom/" target="_blank" class="hi"><img src="{{image}}" /><span>{{likes}}{{comments}}</span></a>',
+    sortBy: 'most-recent',
+    limit: 12,
+    links: false
+  });
+  userFeed.run();
+</script>

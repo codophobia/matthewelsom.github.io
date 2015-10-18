@@ -1,0 +1,49 @@
+footer {
+	@include position(relative, null);
+	@include size(100% auto);
+	min-height: em(100);
+	@include clearfix;
+	background: $base-accent-color;
+	text-align: center;
+	
+	h6 {
+		@include padding(em(20) 0);
+		border-bottom: $base-border; 
+		color: white;
+		text-align: center;
+    font-weight: normal;
+    text-transform:none;
+	}
+	ul {
+		list-style: none;
+		text-align: center;
+		@include padding(em(10) 0);
+		@include margin(0);
+		
+		li { 
+			display: inline;
+			@include margin(0 em(10));
+			font-size: 0.8em;
+			
+			a {
+				color: white;
+				border-bottom: 1px solid transparent;
+				@include transition(all, .2s ease-in-out);
+				
+				&:hover, &:focus {
+					text-decoration: none;
+					color: white;
+					border-bottom:$base-border;
+				}
+			}
+		}
+	}
+  .clear {
+	  display: none;
+	  height: em(60);
+	  @include media($tablet-up) {
+	    display:block;
+	  }
+   }
+
+}// End footer

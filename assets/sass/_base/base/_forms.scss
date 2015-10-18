@@ -1,0 +1,171 @@
+// Variables
+$error-col: orangered ;
+$success-col: $blue;
+
+
+fieldset {
+  background: lighten($base-border-color, 10);
+  border: $base-border;
+  margin: 0 0 ($base-spacing / 2) 0;
+  padding: $base-spacing;
+}
+
+input,
+label,
+select {
+  display: block;
+  font-family: $form-font-family;
+  font-size: $form-font-size;
+}
+
+label {
+	padding: 2em 0.5em 0 0.5em;
+  margin-bottom: $base-spacing / 4;
+
+  &.required:after {
+    content: "*";
+  }
+
+  abbr {
+    display: none;
+  }
+} // End label
+
+textarea,
+#{$all-text-inputs},
+select[multiple=multiple] {
+  @include box-sizing(border-box);
+  @include transition(border-color);
+  background-color: white;
+  border-radius: $form-border-radius;
+  border: 1px solid $form-border-color;
+  box-shadow: $form-box-shadow;
+  font-family: $form-font-family;
+  font-size: $form-font-size;
+  margin-bottom: $base-spacing / 2;
+  padding: ($base-spacing / 3) ($base-spacing / 3);
+  width: 100%;
+
+  &:hover {
+    border-color: $form-border-color-hover;
+  }
+
+  &:focus {
+    border-color: $form-border-color-focus;
+    box-shadow: $form-box-shadow-focus;
+    outline: none;
+  }
+} // End textarea, inputs, selects
+
+textarea {
+  resize: vertical;
+}
+
+input[type="search"] {
+  @include appearance(none);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-right: $base-spacing / 4;
+}
+
+input[type="file"] {
+  padding-bottom: $base-spacing / 2;
+  width: 100%;
+}
+
+select {
+  margin-bottom: $base-spacing;
+  max-width: 100%;
+  width: auto;
+}
+
+
+// Contact Form
+
+#contact {
+	padding-top: em(40);
+	
+	&.disabled {
+		height: 0;
+		opacity: 0;
+		visibility:hidden;
+		display: none;
+		@include transition(all 0.2s ease);
+	}
+	
+	fieldset {
+		padding: 0;
+		border: none;
+		background-color:transparent;
+	}
+	
+	#{$all-text-inputs} {
+		border: 0;
+		border-radius: 0;
+		background-color: transparent;
+		box-shadow: none;
+		padding: 1em 0.5em;
+		border-bottom: 2px solid;
+	}
+		
+	#{$all-text-inputs-focus},
+	#{$all-text-inputs-hover} {
+		border-bottom: 2px solid;
+	}
+	
+	#{$all-text-inputs-active} {
+		border-bottom: 2px solid;
+	}
+		
+	.sendmail {
+		margin-top: 2em;
+		
+		button {
+			min-width: em(200);
+		}
+	} // End sendmail
+} // End #contact
+
+
+// User feedback
+ #{$all-text-inputs} {
+	 	&.error {
+			color: $error-col !important;
+			border-bottom: 2px solid $error-col !important;
+		}
+	 	&.valid {
+			color: $success-col !important;
+			border-bottom: 2px solid $success-col !important;
+		}
+	} // End error and valid inputs
+	
+.error {
+	color: $error-col;
+}
+
+label.error {
+	padding-top: 0;
+	color: $error-col;
+	font-size: 0.8em;
+}
+
+#success, #error {
+	opacity: 0;
+	visibility:hidden;
+	font-weight: bold;
+	
+	&.reveal {
+	opacity: 1;
+	visibility:visible;
+	}
+}
+
+#success {
+	color: $blue;
+}
+#error {
+	color: $error-col;
+}

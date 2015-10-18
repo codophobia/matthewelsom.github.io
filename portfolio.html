@@ -1,0 +1,84 @@
+---
+title: Portfolio
+layout: base
+main-id: portfolio
+---
+
+<section>
+  <div>
+    <article class="col-12 col-10">
+      <h6 class="type">Work</h6> <hr> 
+      <h2>Due to some hefty NDAs I can't showcase too much of my work... If i can show it, you'll find it below.</h2>
+      <p>You can always review my <a class="text" href="{{ site.baseurl }}/services.html" title="My Services">services</a> or <a class="text" href="{{ site.baseurl }}/contact.html" title="Contact me to dicuss projects">contact me</a> if you would like to discuss any projects further.</p>
+    </article>
+  </div>
+</section>
+    
+<section id="grid" class="grid">
+
+<div class="grid-items">
+  
+{% for project in site.portfolio %}
+  {% if project.type == 'modal' %}
+    <div class="modal grid-item">
+      <label for="{{ project.modal-label }}">
+        <img class="bgimage hidden" src="{{ site.baseurl }}/portfolio/portfolio_img/grid/{{ project.grid-image }}">
+        <img class="bgimage" src="{{ site.baseurl }}/portfolio/portfolio_img/grid/{{ project.grid-image }}">
+        <div class="modal-trigger hover-tile visible">
+          <h1>{{ project.title }}</h1>
+            <ul>{% for tag in project.tags %}<li>{{ tag }}</li>{% endfor %}</ul>
+        </div>
+        <div class="hover-tile hidden">
+          <h2>{{ project.title }}</h2>
+          <p class="context">{{ project.excerpt }}</p>
+          <h6>View <img src="{{ site.baseurl }}/assets/img/angle-right.png"></h6>
+        </div>
+      </label>
+      <input class="modal-state" id="{{ project.modal-label }}" type="checkbox" />
+      <div class="modal-fade-screen">
+        <div class="modal-inner">
+          <div class="modal-close" for="{{ project.modal-label }}"></div>
+          <div class="modal-content">
+          <h2>{{ project.modal-title }}</h2>
+          <p>{{ project.modal-content }}</p>
+          
+          {% if project.modal-link == 'show' %}
+            <a class="cta" href="{{ site.baseurl }}{{ project.url}}" title="{{ project.modal-title }}"><h6><span>Continue to the Portfolio</span> <img src="{{ site.baseurl }}/assets/img/arrow-blue.png"></h6></a>
+          {% else %}
+          {% endif %}
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  {% else %}
+    <a href="{{ site.baseurl }}{{ project.url}}" class="grid-item">
+      <img class="bgimage hidden" src="{{ site.baseurl }}/portfolio/portfolio_img/grid/{{ project.grid-image }}">
+      <img class="bgimage" src="{{ site.baseurl }}/portfolio/portfolio_img/grid/{{ project.grid-image }}">
+        <div class="hover-tile visible">
+        <h1>{{ project.title }}</h1>
+        <ul>{% for tag in project.tags %}<li>{{ tag }}</li>{% endfor %}</ul>
+      </div>
+        <div class="hover-tile hidden">
+        <h2>{{ project.title }}</h2>
+        <p class="context">{{ project.excerpt }}</p>
+        <h6>View <img src="{{ site.baseurl }}/assets/img/angle-right.png"></h6>
+      </div>  
+    </a>
+  {% endif %}
+{% endfor %}
+  
+    <a href="{{ site.baseurl }}/contact.html" class="grid-item">
+    <div class="hover-tile visible">
+        <h1>Contact</h1>
+    </div>
+    <div class="hover-tile hidden">
+        <h2>Contact</h2>
+        <p class="context">Get in touch to discuss opportunities.</p>
+        <h6>Go <img src="{{ site.baseurl }}/assets/img/angle-right.png"></h6>
+    </div>
+  </a>
+
+</div>
+
+</section>

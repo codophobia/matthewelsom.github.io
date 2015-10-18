@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Allow: /sitemap.html
+Disallow: /_dev
+Disallow: /_domain
+Sitemap: http://matthewelsom.com/sitemap.xml

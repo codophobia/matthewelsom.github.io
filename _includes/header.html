@@ -1,0 +1,18 @@
+<div class="menu nav-down">	    
+  <a href="/" id="logo">MatthewElsom.com 
+  </a>
+  <button type="button" class="menu-trigger sliding-menu-button">
+    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+  </button>
+    
+  <nav class="sliding-menu-content">
+    <ul>
+      <li><a href="{{ site.baseurl }}/" class="{% if page.url == / %}active{% endif %}">Home</a></li>
+      <li><a href="{{ site.baseurl }}/about.html" class="{% if page.url == /about.html %}active{% endif %}">About</a></li>
+      <li><a href="{{ site.baseurl }}/contact.html" class="{% if page.url == /contact.html %}active{% endif %}">Contact</a></li>
+      <li><a href="{{ site.baseurl }}/services.html" class="{% if page.url == /services.html %}active{% endif %}">Services</a></li>
+      <li><a href="{{ site.baseurl }}/portfolio.html" class="{% if page.url == /portfolio.html %}active{% endif %}">Portfolio</a></li>
+    </ul>
+  </nav>
+</div>
+<div class="menu-screen"></div>

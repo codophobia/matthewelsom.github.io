@@ -176,13 +176,46 @@
 
 //Services Page
 #services {
-  .modal {
-    @include span-columns(3 of 12);
-    @include omega(4n);
+  
+  .services-group {
+    @include clearfix;
+    margin:  $base-spacing 0;
+    @include display(flex);
+    @include flex-wrap(wrap);
+    @include justify-content(center);
+
+    .modal {
+      width: 48%;
+      width: calc(50% - 2rem);
+      padding: $base-padding;
+      margin: $small-spacing;
+      background: white;
+      border-radius: $base-border-radius;
+      box-shadow: 0 1px 2px transparentize(black, 0.9);
+      @include transition(all $base-duration $base-timing);
+      
+      @include media($medium-screen) {
+        width: 23%;
+        width: calc(25% - 2rem);
+      }
+      
+      label {
+        h4 {
+          text-align: center;
+          font-weight: normal;
+          @include transition(all $base-duration $base-timing);
+        }
+      }
+      &:hover {
+        box-shadow: none;
+        
+        label h4 {
+          color: $base-accent-color;
+        }
+      }
+    }
   }
 }
-
-//Portfolio Page
 
 //Sitemap Page
 #sitemap {

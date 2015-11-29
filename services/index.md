@@ -5,7 +5,7 @@ category: services
 
 Select a service below for more information.
 
-<div id="{{ page.category }}" class="container">
+<div class="services-group">
   <div class="modal">
     <label for="modal-1" class="centered">
     <img class="cap" src="{{ site.baseurl }}/assets/img/cap/capabilities__strategy.svg">
@@ -18,7 +18,7 @@ Select a service below for more information.
       <div class="modal-content">
         <h2>Strategy</h2> 
         <ul class="tags"><li>SDD</li><li>Lean UX</li><li>Agile</li></ul>  
-       <p><strong>Which blogging platform is best? Will animation work? Can I use HTML5?</strong></p>
+       <p>Which blogging platform is best? Will animation work? Can I use HTML5?</p>
        <p>I propose answers and craft design strategies that enable you to maintain a clear focus in the ever-changing digital market. Styleguide Driven Development, a Lean approach and agile development techniques are used in all projects.</p>
        <a class="cta" href="javascript:void(0)" title="Branding &amp; Identitiy"><label for="modal-2" class="modal-close-btn">Next</label></a>
       </div>
@@ -37,7 +37,7 @@ Select a service below for more information.
       <div class="modal-content">
        <h2>Branding &amp; Identity</h2> 
        <ul class="tags"><li>Print</li><li>Digital</li><li>Styleguides</li></ul>
-       <p><strong>Bespoke and unique.</strong></p>
+       <p>Bespoke and unique.</p>
        <p>I design corporate branding that covers everything from logo and icon design to color and typography use. All identities are hand crafted and designed with cross-platform use in mind.</p>
        <a class="cta" href="javascript:void(0)" title="Mobile &amp; Responsive Web Design"><label for="modal-3" class="modal-close-btn">Next</label></a>
       </div>
@@ -56,7 +56,7 @@ Select a service below for more information.
         <div class="modal-content">
          <h2>Mobile &amp; Responsive Web Design</h2> 
          <ul class="tags"><li>HTML5</li><li>CSS</li><li>SCSS</li><li>JS</li><li>Handlebars</li><li>Bootstrap</li><li>Wordpress</li><li>Ghost</li><li>Bourbon</li></ul>
-         <p><strong>Interactive and accessible websites.</strong></p>
+         <p>Interactive and accessible websites.</p>
           <p>I leverage the latest Responsive &amp; Adaptive design and development frameworks to deliver one-off professional websites that function seamlessly across multiple browsers and platforms.</p>
           <a class="cta" href="javascript:void(0)" title="Interactive Prototyping"><label for="modal-4" class="modal-close-btn">Next</label></a>
         </div>
@@ -75,7 +75,7 @@ Select a service below for more information.
         <div class="modal-content">
          <h2>Interactive Prototyping</h2>
          <ul class="tags"><li>Axure</li><li>Webflow</li><li>Invision</li><li>Low-fidelity</li><li>High-fidelity</li></ul>
-          <p><strong>Save time with fast concept development.</strong></p>
+          <p>Save time with fast concept development.</p>
           <p>Ranging from Low Fidelity mock ups to High Fidelity interactive wireframes, I develop prototypes that validate ideas and provide opportunity for change and enhancement.</p>
           <a class="cta" href="javascript:void(0)" title="Hosting and Domain Acquisition"><label for="modal-5" class="modal-close-btn">Next</label></a>
         </div>
@@ -94,7 +94,7 @@ Select a service below for more information.
         <div class="modal-content">
          <h2>Hosting and Domain Acquisition</h2>
          <ul class="tags"><li>Hosting</li><li>Domain Name</li><li>Amazon Web Services</li><li>Email</li></ul>
-          <p><strong>Secure, scalable, safe</strong></p>
+          <p>Secure, scalable, safe</p>
           <p>I provide full-service technical solutions that cover securing domain names on your behalf, configuring custom email addresses, and deploying your website into a super safe server in the USA, UK, Singapore or Tokyo.</p>
           <a class="cta" href="javascript:void(0)" title="User Interface Design"><label for="modal-6" class="modal-close-btn">Next</label></a> 
         </div>
@@ -115,7 +115,7 @@ Select a service below for more information.
          <ul class="tags"><li>iOS</li><li>Android</li>
          <li>Hybrid App</li>
          <li>Web</li></ul>
-          <p><strong>Increase your visual impact.</strong></p>
+          <p>Increase your visual impact.</p>
           <p>My tailored UI design solutions focus on brand consistency, IA, effective layout, ease of use and provide engaging places for your target audience to visit over and over again.</p>
           <a class="cta" href="javascript:void(0)" title="Print"><label for="modal-7" class="modal-close-btn">Next</label></a>
         </div>
@@ -134,7 +134,7 @@ Select a service below for more information.
         <div class="modal-content">
          <h2>Print</h2>
           <ul class="tags"><li>Large-Scale</li><li>Stationary</li><li>Promotion</li></ul>
-          <p><strong>True cross-platform consistency.</strong></p>
+          <p>True cross-platform consistency.</p>
           <p>Ensure your brand is represented correctly with a full stock of print collateral. I handle all formats from large-scale sheet printing and magazine layout to small-run namecards and one-off print pieces.</p>
           <a class="cta" href="javascript:void(0)" title="Heuristic Review &amp; Evaluation"><label for="modal-8" class="modal-close-btn">Next</label></a> 
         </div>
@@ -155,7 +155,7 @@ Select a service below for more information.
          <ul class="tags">
            <li>Heuristic Review</li>
            <li>User Research</li></ul>
-          <p><strong>Better products for your users.</strong></p>
+          <p>Better products for your users.</p>
           <p>I go beyond industry standard heuristic evaluation, and test your existing market solutions.</p>
           <p>To close the loop, I provide recommendations and quick fix adjustments that enhance product flows and deliver quick wins to you and your target audience.</p> 
           <a class="cta" href="javascript:void(0)" title="Strategy"><label for="modal-1" class="modal-close-btn">Next</label></a>

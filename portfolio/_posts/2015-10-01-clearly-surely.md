@@ -14,3 +14,6 @@ modal-title: Coming Soon
 modal-content: Clearly Surely isn't quite ready yet, come back soon for an update.
 ---
 
+This project isn't quite ready yet. 
+
+Please come back and take a look later. 

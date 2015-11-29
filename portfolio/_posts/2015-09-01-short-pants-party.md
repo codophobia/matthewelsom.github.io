@@ -12,3 +12,7 @@ modal-label: spp
 modal-title: Coming Soon
 modal-content: Short Pants Party isn't quite ready yet, come back soon for an update.
 ---
+
+This project isn't quite ready yet. 
+
+Please come back and take a look later. 

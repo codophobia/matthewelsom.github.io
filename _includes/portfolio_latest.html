@@ -1,4 +1,4 @@
-<h4>Latest Portfolio</h4>
+<h4>Latest Projects</h4>
 {% assign new_sorted_portfolio = site.posts | sort: 'reversed' | where: "category", "portfolio" %}
 <ul>
   {% for project in new_sorted_portfolio %}

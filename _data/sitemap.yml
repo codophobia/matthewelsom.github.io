@@ -1,0 +1,21 @@
+#Nav
+nav:
+- title: matthewelsom.com
+  menuitems:
+    - title: Home
+      url: /index.html
+    
+    - title: About
+      url: /about/index.html
+      
+    - title: Contact
+      url: /contact/index.html
+      
+    - title: Services
+      url: /services/index.html
+    
+    - title: Portfolio
+      url: /portfolio/index.html
+      
+    - title: Blog
+      url: /blog/index.html  

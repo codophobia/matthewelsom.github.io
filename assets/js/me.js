@@ -3,10 +3,38 @@
    
 // Slide Menu		
 function slideMenu() {
-  $('.menu-trigger, .menu-screen').click(function() {
-		$('.menu, .menu-screen, .menu-trigger, .sliding-menu-content').toggleClass('is-visible');
- });
+  var menuToggle = $('.menu-trigger').unbind();
+  $('.menu-content').removeClass("is-visible");
+  $('.menu').removeClass('is-visible');
+  
+  menuToggle.on('click', function(e) {
+    e.preventDefault();
+    $('.menu').toggleClass('is-visible');
+    $('.menu-content').slideToggle("fast", function(){
+      if($('.menu-content').is(':hidden')) {
+        $('.menu-content').removeAttr('style');
+        $('.menu').removeClass('is-visible');
+      }
+    });
+  });
 }
+
+
+//Mobile Menu
+function MobileMenu() {
+  var menuToggle = $('#js-mobile-menu').unbind();
+  $('#js-navigation-menu').removeClass("show");
+
+  menuToggle.on('click', function(e) {
+    e.preventDefault();
+    $('#js-navigation-menu').slideToggle(function(){
+      if($('#js-navigation-menu').is(':hidden')) {
+        $('#js-navigation-menu').removeAttr('style');
+      }
+    });
+  });
+}
+
 // End Slide Menu
 		
 
@@ -52,7 +80,7 @@ function smoothscroll() {
 // Change Menu on Scroll
 function menuScroll() {
 	
-	var t = $("main").offset().top;
+	var t = $("body").offset().top;
 		
 		$(window).scroll(function(){
 			if($(this).scrollTop() > t + 10) {   
@@ -64,8 +92,13 @@ function menuScroll() {
 }
 // End Change Menu on Scroll
 
+//Target External Links
+function TargetBlank() {
+  $("a[href^='http']").attr("target","_blank").addClass("ext");
+}
 
-
+//Print Copyright Message
+console.log('%c Copyright 2015 & Beyond. Matthew Elsom', "background: dodgerblue; color: white; padding:2px 4px; 2px 0");
 
 //// Fade in Project Images
 //	(function($) {
@@ -128,5 +161,6 @@ $(document).ready(function() {
 	menuScroll();
 	modal();
 	smoothscroll(); 
+    TargetBlank(); 
 });
 

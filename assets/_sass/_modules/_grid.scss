@@ -1,0 +1,125 @@
+@mixin grid-item-columns($columns) {
+  width: (100% / 12) * $columns;
+}
+
+//Grid Variables
+$grid-items-background: $base-background-color;
+$grid-item-background: transparentize(black, .2);
+$grid-item-colors: transparentize(black, .2), transparentize(black, .2);
+$grid-item-border-size: em(4);
+$grid-item-col: 4;
+$grid-item-med-col: 6;
+$grid-item-large-col: 8;
+$grid-item-color: white;
+
+$dual-col: 560px;
+$tri-col: 860px;
+
+
+.grid {
+  padding: null null $base-spacing null;
+}
+
+.grid-items {
+  @include clearfix;
+  
+  .grid-item {
+    height: 200px;
+    
+    @include media($medium-screen) {
+      height: 280px;
+    }
+    
+    background: $grid-item-background;
+    width: 100%;
+    overflow: hidden;
+    float: left;
+    padding: 0;
+    cursor: pointer;
+    position:relative;
+    
+    @include media($dual-col) {
+      @include grid-item-columns($grid-item-med-col);
+    }
+    @include media($tri-col) {
+      @include grid-item-columns($grid-item-col);
+    }
+    &:last-child {
+      background-color: $base-accent-color;
+    }
+  }
+  .grid-item img {
+    display: block;
+  }
+  .grid-item p.context {
+    display: none;
+    
+    @include media($tri-col) {
+      display: block;
+    }
+  }
+  .grid-item h2.title {
+    margin: $small-spacing auto;
+    color: $grid-item-color;
+  }
+  .grid-item h6.cta {
+    text-transform: uppercase;
+    color: $grid-item-color;
+    margin: 0;
+    margin-top: $base-padding;
+    
+    img {
+      display: inline-block;
+      height: 34px;
+      @include margin(-0.2em 0 0 0);
+      vertical-align: middle;
+      @include padding(0 0 0 0.4em);
+    }
+  }
+  .grid-item img.bgimage {
+    min-height: 280px;
+    @include position(absolute, 50% null null 50%);
+    @include transform(translate(-50%, -50%));
+    @include transition(all, .4s ease-in-out);
+    max-width:none;
+    @include size(110% auto);
+    
+    @include media($tri-col) {
+      @include size(auto 110%);
+    }
+  
+    &.hidden {
+      opacity: 0;
+    }
+  }
+  .grid-item:hover {
+    .hover-tile {
+      @include transform(translate(0, -100%));
+    }
+    h1 {
+      opacity: 0;
+      @include transform(translate(0, -200%));
+    }
+    img.bgimage {
+      opacity: 1;
+    }
+    ul {
+      opacity: 0;
+      @include transform(translate(0, 200%));
+    }
+  }
+  .hover-tile {
+    @include transition(all, .2s ease-in-out);
+    @include transition-delay(0.2s);
+    @include position(relative, null);
+    color: $grid-item-color;
+    height: inherit;
+    padding: $base-spacing;
+    background: $grid-item-background;
+    color: white;
+    
+    &.hidden {
+      background: transparentize($base-accent-color, .05);
+    }
+  }
+}

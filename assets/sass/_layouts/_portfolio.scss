@@ -1,9 +1,0 @@
-main.portfolio {
-			
-article {
-	@include media($mobile){
-		@include margin(em(100) null em(30) null);
-	}
-}		
-	
-} // End portfolio

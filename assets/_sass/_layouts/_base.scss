@@ -1,0 +1,29 @@
+html, 
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background: $base-background-color;
+}
+//Set the wrapper height to keep the footer at the bottom of the page
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  min-height: calc(100% - 100px);
+}
+.container {
+  @include outer-container;
+  padding: 0 $base-padding;
+  margin-top: $base-spacing * 2;
+  
+  @include media($medium-screen) {
+    padding: 0 $base-spacing *2;
+  }
+  @include media($extended-screen) {
+    padding: 0 $base-padding;
+  }
+  
+  p:first-of-type {
+    @extend .lead;
+  }
+}

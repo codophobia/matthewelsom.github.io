@@ -1,29 +1,45 @@
-title: Matthew Elsom | Design &amp; Art Direction
-keywords: matthew, elsom, matthewelsom.com, design, digital, print, art, direction, mobile, applications, identities, corporate, websites, dynamic, html, javascript, singapore, london, tokyo
-author: Matthew Elsom
-description: Matthew Elsom | Design & Art Direction. Designing and developing mobile applications, websites, dynamic prototypes and corporate identities in Singapore; with experience managing creative teams in London and Tokyo.
-port: 5555
+site_title: Matthew Elsom | Design & Art Direction
+site_keywords: matthew, elsom, matthewelsom.com, design, digital, print, art, direction, mobile, applications, identities, corporate, websites, dynamic, html, javascript, singapore, london, tokyo
+site_author: Matthew Elsom
+site_description: Matthew Elsom | Design & Art Direction. Designing and developing mobile applications, websites, dynamic prototypes and corporate identities in Singapore; with experience managing creative teams in London and Tokyo.
 
 #source: source
 #destination: dist
+port: 5555
 
-siteurl: 
+#Google Analytics ID, auto populated to all pages
+google_analytics: UA-19247091-2
+
+#URL Prefixing
+siteurl: http://matthewelsom.com
 baseurl: 
 
+#Permalinks
 permalink: none
 
-collections:
-  portfolio:
-    output: true
-    permalink: /portfolio/:path/      
+#sass import directory
+sass:
+  sass_dir: assets/_sass
     
+#Default Front Matter
 defaults:
   -
     scope:
-      path: "" # an empty string here means all files in the project
-      type: "portfolio" # previously `post` in Jekyll 2.2.
+      path: "portfolio" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
     values:
       layout: "portfolio"
-      category: "portfolio"    
-      
-#Install Plugins      
+      category: "portfolio"
+  -
+    scope:
+      path: "blog" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post"
+      category: "blog"    
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"      

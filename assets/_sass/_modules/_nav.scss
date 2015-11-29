@@ -1,0 +1,231 @@
+$menu-accentColor: $blue;
+$menu-hoverColor: darken($menu-accentColor, 20%);
+$menu-defaultColor: whitesmoke;
+$menu-altColor: white;
+$sliding-menu-border: 1px solid $blue;
+$sliding-menu-color-hover: $blue;
+
+$menu-break: $medium-screen;
+
+.menu {
+  @include outer-container();
+  position: relative;
+  display: block;
+  height: auto;
+  min-height: 56px;
+  background: transparent;
+}
+
+//Logo Styles
+#logo {
+  @include position(relative, $base-padding null null $base-padding);
+  display: block;
+  float: left;
+  height: auto;
+  cursor: pointer;
+  font-size: $small-font-size;
+  text-transform: uppercase;
+  font-weight: bold;
+  @include transition(all $base-duration $base-timing);
+  
+  &:hover {
+    color: $menu-hoverColor;
+    &:before {
+      background: $menu-hoverColor;
+    }
+  }
+}
+#logo:before {
+  @include position(absolute, null null 0 0);
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: $menu-accentColor;
+  visibility: visible;
+  @include transition(all $base-duration $base-timing);
+}
+
+//Menu Button
+.menu-button {
+  position: relative;
+  display: block;
+  float: right;
+  @include size(44px);
+  padding: 0;
+  margin: $small-spacing $base-padding;
+  border-radius: 50%;
+  border: 2px solid $menu-accentColor;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  @include transition(all $base-duration $base-timing);
+  
+  span.bar {
+    @include size(20px 2px);
+    margin: 4px auto;
+    display: block;
+    opacity: 1;
+    background: $menu-accentColor;
+    @include transition(all $base-duration $base-timing);
+  }
+  
+  &:hover {
+    background: $menu-accentColor;
+    span.bar {
+      background: $menu-defaultColor;
+    }
+  }
+  
+  @include media($menu-break) {
+    display: none;
+  }
+}
+
+//Menu Area
+.menu-content {
+  position: relative;
+  display: none;
+  clear: right;
+  padding: $base-padding;
+  text-align: center;
+  
+  @include media($menu-break) {
+    @include position(relative, $base-padding $base-padding null null);
+    display: block;
+    padding: 0;
+    float: right;
+  }
+}
+
+//Menu Items
+.menu-content ul li {
+  display: block;
+  font-family: $serif;
+  margin: $small-spacing;
+  
+  a {
+    font-size: $h3-font-size;
+    position: relative;
+    display: block;
+    color: $menu-altColor;
+
+    &:hover {
+      color: $menu-hoverColor;
+    }
+  }
+  a.active {
+    color: $menu-hoverColor;
+  }
+}
+@include media($menu-break) {
+  .menu-content ul li {
+    display: inline-block;
+    margin: 0 $base-padding 0 0; 
+    font-family: $sans-serif;
+    text-transform: uppercase;
+    
+    &:last-child {
+      margin-right: 0;
+    }
+  
+    a {
+      font-size: $small-font-size;
+      color: $menu-accentColor;
+      font-weight: bold;
+      
+      &:before {
+        @include position(absolute, null null 0 0);
+        content: "";
+        width: 100%;
+        height: 2px;
+        background: $menu-accentColor;
+        visibility: hidden;
+        @include transform(scaleX(0));
+        @include transform-origin(left);
+        @include transition(all $base-duration $base-timing);
+      }
+
+      &.active {
+        color: $menu-accentColor;
+        &:before {
+          background: $menu-accentColor;
+          visibility: visible;
+          @include transform(scaleX(1));
+        }
+      }
+      &:hover {
+        color: $menu-hoverColor;
+        &:before {
+          background: $menu-hoverColor;
+          visibility: visible;
+          @include transform(scaleX(1));
+        }
+      }
+      
+    }
+  }
+}
+
+//Menu Active Styles
+.menu.is-visible {
+  background: $menu-accentColor;
+
+  #logo {
+    color: $menu-altColor;
+    
+    &:before {
+      background: $menu-altColor;
+    }
+    &:hover {
+      color: $menu-hoverColor;
+      &:before {
+        background: $menu-hoverColor;
+      }
+    }
+  }
+  @include media($menu-break) {
+    background: transparent;
+    #logo {
+      color: $menu-accentColor;
+    }
+    #logo:before {
+      background: $menu-accentColor;
+    }
+  }
+
+  .menu-button {
+    border-color: $menu-altColor;
+
+    span.bar {
+      background: $menu-altColor;
+    }
+    span.bar {
+      background: $menu-defaultColor;
+      &:first-child {
+        @include transform(scale(1) rotate(45deg));
+        @include transform-origin(center);
+        @include position(relative, 3px null null null);
+      }
+      &:last-child {
+        @include transform(scale(1) rotate(-45deg));
+        @include transform-origin(center);
+        @include position(relative, -3px null null null);
+      }
+    }
+    &:hover {
+      border-color: darken($menu-accentColor, 20%);
+
+      span.bar {
+        background: darken($menu-accentColor, 20%);
+      }
+    }
+  }  
+  
+  .menu-content {
+    background: $menu-accentColor;
+    
+    @include media($menu-break) {
+      background: transparent;
+    }
+  }
+}

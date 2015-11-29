@@ -1,0 +1,14 @@
+---
+layout: base
+---
+   
+<div id="post" class="container">
+  <article>
+    <h1>{{ post.title }}</h1> 
+    <ul class="tags">{% for tag in page.tags %}<li>{{ tag }}</li>{% endfor %}</ul>
+    {{ content }}
+  </article>  
+  <aside>
+    {% include portfolio_latest.html %}
+  </aside> 
+</div>

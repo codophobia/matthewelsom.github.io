@@ -1,0 +1,23 @@
+---
+layout: none
+---
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+  <title>{{ site.site_title | strip_html | xml_escape }}</title>
+  <description>{{ site.site_description | strip_html | xml_escape }}</description>		
+  <link>{{ site.siteurl }}</link>
+  <atom:link href="{{ site.siteurl }}/feed.xml" rel="self" type="application/rss+xml" />
+  {% for post in site.posts %}
+    <item>
+      <title>{{ post.title | strip_html | xml_escape }}</title>
+      <link>{{ site.siteurl }}{{ site.baseurl }}{{ post.url }}</link>
+      <dc:creator>{{ site.site_author | strip_html | xml_escape }}</dc:creator>   
+      {% if post.excerpt %}<description>{{ post.excerpt | strip_html | xml_escape }}</description>{% else %}<description>{{ post.content | strip_html | truncate 300 | xml_escape }}</description>{% endif %}
+      <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+      <guid>{{ site.siteurl }}{{ site.baseurl }}{{ post.url }}</guid>
+    </item>
+  {% endfor %}
+  </channel>
+</rss>

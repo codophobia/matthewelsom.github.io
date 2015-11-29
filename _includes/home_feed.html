@@ -1,0 +1,19 @@
+<div class="home-feed">
+  <div class="title"><i class="fa fa-newspaper-o"></i> Latest</div>
+  {% assign sorted_posts = site.posts | sort: 'reversed' %}
+  <ul>
+    {% for post in sorted_posts | limit: 3 %}
+    <li class="{{ post.category }}">
+      <a href="{{ post.url }}">
+        <img {% if post.category == 'portfolio' %}src="{{ site.baseurl }}/portfolio/portfolio_img/grid/{{ post.grid-image }}"{% else %}src="http://placehold.it/920x680"{% endif %}>
+        <div class="inner">
+          <div class="post-category">{% if post.category == 'portfolio' %}Portfolio{% elsif post.category == 'blog' %}Blog{% else %}{% endif %}</div> 
+          <h3 class="post-title">{{ post.title }}</h3>
+          <h6 class="cta">Read It <img src="{{ site.baseurl }}/assets/img/angle-right.png"></h6>
+          <p class="post-content">{% if post.category == 'portfolio' %}{{ post.excerpt | truncate: 100 | strip_html }}{% endif %}</p>
+        </div>
+      </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

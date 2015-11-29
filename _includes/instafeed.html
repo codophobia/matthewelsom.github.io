@@ -1,0 +1,19 @@
+<div class="instabanner">
+  <a href="https://instagram.com/matthewelsom/" target="_blank"><i class="fa fa-instagram"></i> Instagram</a>
+</div> 
+<div id="instafeed"></div>
+
+<script src="assets/js/libs/instagram.js"></script>
+<script type="text/javascript">
+  var userFeed = new Instafeed({
+    get: 'user',
+    userId: 623597756,
+    accessToken: '623597756.467ede5.3f043d48217f49229979dea9ab5515fb',
+    resolution: 'standard_resolution',
+    template: '<a href="https://instagram.com/matthewelsom/" target="_blank" class="hi"><img src="{{image}}" /><span>{{likes}}{{comments}}</span></a>',
+    sortBy: 'most-recent',
+    limit: 32,
+    links: false
+  });
+  userFeed.run();
+</script>

@@ -1,0 +1,225 @@
+html, 
+body {
+  @include font-feature-settings("kern","liga","frac", "pnum");
+  -webkit-font-smoothing: antialiased;
+  background-color: $base-background-color;
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+//Headings
+h1, h2, h3, h4, h5, h6 {
+  margin: $small-spacing 0;
+  font-weight: 600;
+  line-height: $heading-line-height;
+  color: $heading-font-color;
+}
+h1 {
+  font-size: $h1-font-size / $modular-scale-ratio;
+  font-family: $serif;
+  
+  @include media($medium-screen){
+    font-size: $h1-font-size;
+  }
+}
+h2 {
+  font-size: $h2-font-size / $modular-scale-ratio;
+  
+  @include media($medium-screen){
+    font-size: $h2-font-size; 
+  }
+}
+h3 {
+  font-size: $h3-font-size / $modular-scale-ratio;
+  
+  @include media($medium-screen){
+    font-size: $h3-font-size; 
+  }
+}
+h4 {
+  font-size: $h4-font-size / $modular-scale-ratio;
+  
+  @include media($medium-screen){
+    font-size: $h4-font-size; 
+  }
+}
+.page-title {
+  font-size: $page-title-font-size;
+  
+  &:after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 3rem;
+    height: 2px;
+    background: $base-font-color;
+    margin: $base-spacing 0;
+  }
+}
+
+//Body
+p {
+  margin-top: 0;
+  margin-bottom: $base-spacing;
+}
+strong {
+  font-weight: bold;
+}
+.lead {
+  font-family: $serif;
+  font-size: $lead-font-size;
+}
+
+//Basic Links
+a {
+  @include transition(color $base-duration $base-timing);
+  color: $base-link-color;
+  text-decoration: none;
+  
+  &:hover,
+  &:focus  {
+    color: $base-link-color;
+  }
+}
+//Page Links
+.container a:not(.cta) {
+  border-bottom: 2px solid $base-link-color;
+  color: $base-font-color;
+  
+  &:hover,
+  &:focus {
+    color: $base-link-color;
+  }
+}
+//External Page Links
+.container a.ext {
+  border-bottom: 2px dotted $base-link-color;
+  
+  &:hover,
+  &:focus {
+    color: $base-link-color;
+  }
+}
+//Page Call to Actions
+.container a.cta {
+  position: relative;
+  display: inline-block;
+  margin: $base-padding 0;
+  margin-top: $base-spacing * 2;
+  text-transform: uppercase;
+  font-size: $small-font-size;
+  font-weight: bold;
+  
+  &:before {
+    @include position(absolute, null null 0 0);
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: $blue;
+    visibility: hidden;
+    @include transform(scaleX(0));
+    @include transform-origin(left);
+    @include transition(all $base-duration $base-timing);
+  }
+  &:after {
+    @include position(absolute, -8px null null null);
+    content: '';
+    height: 34px;
+    width: 34px;
+    margin-left: $small-spacing;
+    display: inline-block;
+    background-image: url(../img/arrow-blue.png);
+    background-size: cover; 
+    @include transition(all $base-duration $base-timing);
+  }
+  &:hover {
+    &:before {
+      visibility: visible;
+      @include transform(scaleX(1));
+    }
+    &:after {
+      @include transform(rotate(360deg));
+    }
+  }
+//
+//  img {
+//    display: inline-block;
+//    height: 34px;
+//    @include margin(-0.2em 0 0 0);
+//    vertical-align: middle;
+//    @include padding(0 0.4em);
+//  }
+} // End .cta
+
+//Horizontal Line
+hr {
+	border-bottom: $base-border;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	margin: $base-spacing 0;
+	width: $base-spacing * 2;
+}
+
+figure {
+  @include margin(1em 2em);
+  position: relative;
+  
+  figcaption {
+  	@include position(absolute, null null 3.5em 0);
+	@include padding($base-spacing/2);
+	@include transition(opacity 0.1s linear);
+	color: white;
+	opacity: 0;
+	font-weight: bold;
+	font-size: 0.8em;
+	background: transparentize($blue, 0.1);
+  }
+  &:hover > figcaption {
+//  	@include media($tablet-screen) {
+//		opacity: 1;
+//	}
+  }
+}
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}
+
+blockquote {
+  border-left: 2px solid $base-border-color;
+  color: lighten($base-font-color, 15);
+  margin: $base-spacing 0;
+  padding-left: $base-spacing / 2;
+}
+
+cite {
+  color: lighten($base-font-color, 25);
+  font-style: italic;
+
+  &:before {
+    content: "\2014 \00A0";
+  }
+}
+  
+code {
+	white-space: nowrap;
+	background: #F7F7F7;
+	border: 1px solid #E0E0E0;
+	border-radius: $base-border-radius * 1.5;
+	padding: .1em .4em;
+	font-size: .8em;
+	font-style: normal;
+}
+
+::selection {
+  background: $blue;
+	color: white;
+}
+::-moz-selection {
+  background: $blue;
+	color: white;
+}

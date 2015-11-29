@@ -1,0 +1,42 @@
+footer {
+  @include position(relative, 0 null null null);
+  @include size(100% auto);
+  min-height: 100px;
+  @include clearfix;
+  background: $base-accent-color;
+  text-align: center;
+  font-size: $small-font-size;
+  
+  .footer-copy {
+    border-bottom: $alt-border;
+    padding: $base-padding;
+    margin: 0;
+    color: white;
+  }
+  .footer-links {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  
+    li {
+      display: block;
+      margin: $base-padding;
+      
+      @include media($medium-screen){
+        display: inline-block;
+      }
+      a {
+        color: white;
+        border-bottom: 1px solid transparent;
+        @include transition(all $base-duration $base-timing);
+        &:hover,
+        &:focus {
+          text-decoration: none;
+          color: white;
+          border-bottom: $alt-border;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+<section id="grid" class="grid">
+  <div class="grid-items">
+  {% assign sorted_portfolio = site.posts | sort: 'title' | where: "category", "portfolio" %}
+  {% for project in sorted_portfolio %}
+    {% if project.type == 'modal' %}
+      <div class="modal grid-item">
+        <label for="{{ project.modal-label }}">
+          <img class="bgimage" src="{{ site.baseurl }}/portfolio/portfolio_img/grid/{{ project.grid-image }}">
+          <div class="modal-trigger hover-tile visible">
+            <h2 class="title">{{ project.title }}</h2>
+              <ul class="tags">{% for tag in project.tags %}<li>{{ tag }}</li>{% endfor %}</ul>
+          </div>
+          <div class="hover-tile hidden">
+            <h2 class="title">{{ project.title }}</h2>
+            <p class="context">{{ project.excerpt }}</p>
+            <h6 class="cta">View <img src="{{ site.baseurl }}/assets/img/angle-right.png"></h6>
+          </div>
+        </label>
+        <input class="modal-state" id="{{ project.modal-label }}" type="checkbox" />
+        <div class="modal-fade-screen">
+          <div class="modal-inner">
+            <div class="modal-close" for="{{ project.modal-label }}"></div>
+            <div class="modal-content">
+            <h2>{{ project.modal-title }}</h2>
+            <p>{{ project.modal-content }}</p>
+
+            {% if project.modal-link == 'show' %}
+              <a class="cta" href="{{ site.baseurl }}{{ project.url}}" title="{{ project.modal-title }}">Continue to the Portfolio</a>
+            {% else %}
+            {% endif %}
+
+            </div>
+          </div>
+        </div>
+      </div>
+    {% else %}
+      <a href="{{ site.baseurl }}{{ project.url}}" class="grid-item">
+        <img class="bgimage" src="{{ site.baseurl }}/portfolio/portfolio_img/grid/{{ project.grid-image }}">
+          <div class="hover-tile visible">
+          <h2 class="title">{{ project.title }}</h2>
+          <ul class="tags">{% for tag in project.tags %}<li>{{ tag }}</li>{% endfor %}</ul>
+        </div>
+          <div class="hover-tile hidden">
+          <h2 class="title">{{ project.title }}</h2>
+          <p class="context">{{ project.excerpt }}</p>
+          <h6 class="cta">View <img src="{{ site.baseurl }}/assets/img/angle-right.png"></h6>
+        </div>  
+      </a>
+    {% endif %}
+  {% endfor %}
+      <a href="{{ site.baseurl }}/contact/index.html" class="grid-item">
+      <div class="hover-tile visible">
+          <h2 class="title">Contact</h2>
+      </div>
+      <div class="hover-tile hidden">
+          <h2 class="title">Contact</h2>
+          <p class="context">Get in touch to discuss opportunities.</p>
+          <h6 class="cta">Go <img src="{{ site.baseurl }}/assets/img/angle-right.png"></h6>
+      </div>
+    </a>
+  </div>
+</section>

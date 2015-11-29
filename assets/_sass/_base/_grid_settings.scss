@@ -1,0 +1,23 @@
+@import "neat/neat-helpers"; 
+
+// Neat Breakpoints
+$small: 420px;
+$medium: 768px;
+$large: 960px;
+$extended: 1200px;
+
+// Neat Overrides
+$grid-columns: 4;
+$gutter: em(40);
+$max-width: 1140px;
+  
+// Visual Grid
+//--------------------------------------
+$visual-grid: false;
+$visual-grid-color: transparentize(blue,0.9);
+$visual-grid-index: front;  
+
+$small-screen: new-breakpoint($small, 6);
+$medium-screen: new-breakpoint($medium, 8);
+$large-screen: new-breakpoint($large, 12);
+$extended-screen: new-breakpoint($extended, 12);

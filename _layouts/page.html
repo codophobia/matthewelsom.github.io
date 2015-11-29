@@ -1,0 +1,14 @@
+---
+layout: base
+---
+
+<div class="container">
+  {% unless page.category == 'home' %} 
+    <h1 class="page-title">{{ page.title }}</h1> 
+  {% else %}
+  {% endunless %}
+  {{ content }} 
+</div>
+{% if  page.category == 'portfolio' %}
+  {% include portfolio_grid.html %}  
+{% endif %}

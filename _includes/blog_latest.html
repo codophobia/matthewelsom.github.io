@@ -1,0 +1,7 @@
+<h4>Latest Posts</h4>
+{% assign new_sorted_posts = site.posts | sort: 'reversed' | where: "category", "blog" %}
+<ul>
+  {% for project in new_sorted_posts %}
+  <li><a href="{{ project.url }}">{{ project.title }}</a></li>
+  {% endfor %}
+</ul>

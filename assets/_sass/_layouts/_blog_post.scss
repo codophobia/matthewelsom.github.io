@@ -1,0 +1,15 @@
+#blog {
+  article {
+    @include media($medium-screen) {
+      @include span-columns(8 of 12);
+    }
+  } // End article
+  aside {
+    margin:  $base-spacing 0;
+    
+    @include media($medium-screen) {
+      @include span-columns(4 of 12);
+      margin: 0;
+    }
+  } // End aside
+} // End section.project

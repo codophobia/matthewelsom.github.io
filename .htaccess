@@ -1,0 +1,19 @@
+<ifmodule mod_deflate.c>
+	AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript text/javascript
+</ifmodule>
+
+<FilesMatch "\.(ico|pdf|jpg|jpeg|png|gif|js|css)$">
+  Header set Cache-Control "max-age=864000, public, must-revalidate"
+  Header unset Last-Modified
+</FilesMatch>
+
+<FilesMatch "\.(html|htm|xml|txt|xsl)$">
+  Header set Cache-Control "max-age=7200, must-revalidate"
+</FilesMatch>
+
+AddType image/svg+xml svg
+AddType image/svg+xml svgz
+
+AddHandler type-map .var
+ErrorDocument 403 /error/403.html.var
+ErrorDocument 404 /error/404.html.var

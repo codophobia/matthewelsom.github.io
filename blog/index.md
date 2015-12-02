@@ -10,5 +10,12 @@ category: blog
 
 <p class="content">{{ post.content | truncate: 100 | strip_html }} <a href="{{ site.baseurl }}{{ post.url }}">Read More</a></p>
 
-<ul class="tags">{% for tag in post.tags %}<li>{{ tag }}</li>{% endfor %}</ul>
+<ul class="tags">
+{% assign approvedTags = site.data.tags.tags %}
+{% for tag in post.tags %}
+  {% if approvedTags contains tag %}
+    <li>{{ tag }}</li>
+  {% endif %}
+{% endfor %}
+</ul>
 {% endfor %}

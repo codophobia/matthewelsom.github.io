@@ -1,6 +1,6 @@
 ---
 title: Clearly Surely
-tags: [Web Design, UI, Branding]
+tags: [web, ui, ux, branding]
 excerpt: Web design for a Singapore based Insurance comparison site.
 hero: hero_CS.png
 

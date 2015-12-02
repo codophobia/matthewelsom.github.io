@@ -8,7 +8,14 @@
           <img class="bgimage" src="{{ site.baseurl }}/portfolio/portfolio_img/grid/{{ project.grid-image }}">
           <div class="modal-trigger hover-tile visible">
             <h2 class="title">{{ project.title }}</h2>
-              <ul class="tags">{% for tag in project.tags %}<li>{{ tag }}</li>{% endfor %}</ul>
+              <ul class="tags">
+              {% assign approvedTags = site.data.tags.tags %}
+              {% for tag in project.tags %}
+                {% if approvedTags contains tag %}
+                  <li>{{ tag }}</li>
+                {% endif %}
+              {% endfor %}
+          </ul>
           </div>
           <div class="hover-tile hidden">
             <h2 class="title">{{ project.title }}</h2>
@@ -38,7 +45,14 @@
         <img class="bgimage" src="{{ site.baseurl }}/portfolio/portfolio_img/grid/{{ project.grid-image }}">
           <div class="hover-tile visible">
           <h2 class="title">{{ project.title }}</h2>
-          <ul class="tags">{% for tag in project.tags %}<li>{{ tag }}</li>{% endfor %}</ul>
+          <ul class="tags">
+          {% assign approvedTags = site.data.tags.tags %}
+          {% for tag in project.tags %}
+            {% if approvedTags contains tag %}
+              <li>{{ tag }}</li>
+            {% endif %}
+          {% endfor %}
+          </ul>
         </div>
           <div class="hover-tile hidden">
           <h2 class="title">{{ project.title }}</h2>

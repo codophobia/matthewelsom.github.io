@@ -1,6 +1,6 @@
 ---
 title: The New Order
-tags: [Design, UI, Responsive Blog]
+tags: [design, ui, responsive, web, ux]
 excerpt: Concept user interface design and logo refresh for The New Order Magazine.
 hero: hero_NO.png
 

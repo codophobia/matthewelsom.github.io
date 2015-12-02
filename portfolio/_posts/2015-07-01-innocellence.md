@@ -1,6 +1,6 @@
 ---
 title: InnoCellence
-tags: [Identity, Direction, HTML5, Responsive Web]
+tags: [branding, direction, html5, responsive, web, strategy]
 excerpt: Design &amp; direction for a Singapore based digital innovation agency.
 hero: hero_IC.png
 

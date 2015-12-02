@@ -1,6 +1,6 @@
 ---
 title: Great British Outfitters
-tags: [Identity, Branding, Print]
+tags: [identity, branding, print]
 excerpt: Identity and concept interface design for a shooting and hunting attire specialist.
 hero: hero_GB.png
 

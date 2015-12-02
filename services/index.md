@@ -50,7 +50,7 @@ Select a service below for more information.
     <label for="modal-3" class="centered">
       <img class="cap" src="{{ site.baseurl }}/assets/img/cap/capabilities_responsive.svg">
       <h4>Mobile &amp; Responsive Web Design</h4>
-      <ul class="tags"><li>HTML</li><li>CSS</li><li>SCSS</li><li>JS</li><li>Liquid</li><li>Bootstrap</li><li>Wordpress</li><li>Ghost</li><li>Bourbon</li></ul>
+      <ul class="tags"><li>HTML5</li><li>CSS</li><li>SCSS</li><li>JS</li><li>Liquid</li><li>Bootstrap</li><li>Wordpress</li><li>Ghost</li><li>Bourbon</li></ul>
     </label>
     <input class="modal-state" id="modal-3" type="checkbox" />
     <div class="modal-fade-screen">
@@ -58,7 +58,7 @@ Select a service below for more information.
         <div class="modal-close" for="modal-3"></div>
         <div class="modal-content">
          <h2>Mobile &amp; Responsive Web Design</h2> 
-         <ul class="tags"><li>HTML</li><li>CSS</li><li>SCSS</li><li>JS</li><li>Liquid</li><li>Bootstrap</li><li>Wordpress</li><li>Ghost</li><li>Bourbon</li></ul>
+         <ul class="tags"><li>HTML5</li><li>CSS</li><li>SCSS</li><li>JS</li><li>Liquid</li><li>Bootstrap</li><li>Wordpress</li><li>Ghost</li><li>Bourbon</li></ul>
          <p>Interactive and accessible websites.</p>
           <p>I leverage the latest Responsive &amp; Adaptive design and development frameworks to deliver one-off professional websites that function seamlessly across multiple browsers and platforms.</p>
           <a class="cta" href="javascript:void(0)" title="Interactive Prototyping"><label for="modal-4" class="modal-close-btn">Next</label></a>

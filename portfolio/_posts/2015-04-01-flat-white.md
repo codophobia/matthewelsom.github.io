@@ -1,6 +1,6 @@
 ---
 title: Flat White
-tags: [Branding, Print, Web Design]
+tags: [branding, print, web, design, hosting]
 excerpt: Identity and web design for a quaint cafe in the North of England.
 hero: hero_FW.png
 

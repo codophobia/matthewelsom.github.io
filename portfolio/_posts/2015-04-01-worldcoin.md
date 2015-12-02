@@ -1,6 +1,6 @@
 ---
 title: Worldcoin
-tags: [Branding]
+tags: [branding, ui]
 excerpt: Branding for a digital currency platform.
 hero: hero_WC.png
 

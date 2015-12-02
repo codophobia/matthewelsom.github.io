@@ -1,6 +1,6 @@
 ---
 title: Crypto Box
-tags: [Design, UI, HTML5, Responsive Web]
+tags: [design, ui, html5, responsive, web]
 excerpt: User interface and identity design for a cryptocurrency consultancy.
 hero: hero_CB.png
 

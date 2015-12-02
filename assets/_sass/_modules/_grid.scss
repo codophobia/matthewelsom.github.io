@@ -82,10 +82,16 @@ $tri-col: 860px;
     @include transform(translate(-50%, -50%));
     @include transition(all, .4s ease-in-out);
     max-width:none;
-    @include size(110% auto);
+    width: 110%;
+    height: auto;
     
+    @include media($dual-col) {
+      height: 110%;
+      width: auto;
+    }
     @include media($tri-col) {
-      @include size(auto 110%);
+      height: 110%;
+      width: auto;
     }
   
     &.hidden {

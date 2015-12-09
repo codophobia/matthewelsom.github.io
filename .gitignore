@@ -1,6 +1,4 @@
 _site/
-protected/
-
 .sass-cache/
 **/.sass-cache
 **/.sass-cache/*

@@ -14,6 +14,5 @@
 AddType image/svg+xml svg
 AddType image/svg+xml svgz
 
-AddHandler type-map .var
-ErrorDocument 403 /error/403.html.var
-ErrorDocument 404 /error/404.html.var
+ErrorDocument 403 403.html
+ErrorDocument 404 404.html

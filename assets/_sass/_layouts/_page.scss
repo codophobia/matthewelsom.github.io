@@ -1,6 +1,6 @@
 //Home
 #home {  
-  .wrapper {
+  &.wrapper {
     position: relative;
     min-height: 100%;
     min-height: calc(100% - 368px);

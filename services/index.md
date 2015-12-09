@@ -170,5 +170,5 @@ Select a service below for more information.
 </div>
 
 
-<p>Take a look at my <a href="{{ site.baseurl }}/portfolio.html" class="text">latest work</a> or reach out for some free help on <a href="http://stackoverflow.com/users/4925187/matthewelsom" target="_blank" class="text ext"><i class="fa fa-stack-overflow"></i> Stack Overflow.</a></p>
-<a class="cta" href="{{ site.baseurl }}/contact.html" title="Contact Me">Contact Me</a>
+<p>Take a look at my <a href="{{ site.baseurl }}/portfolio/index.html" class="text">latest work</a> or reach out for some free help on <a href="http://stackoverflow.com/users/4925187/matthewelsom" target="_blank" class="text ext"><i class="fa fa-stack-overflow"></i> Stack Overflow.</a></p>
+<a class="cta" href="{{ site.baseurl }}/contact/index.html" title="Contact Me">Contact Me</a>

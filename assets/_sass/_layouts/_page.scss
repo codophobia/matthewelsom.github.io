@@ -173,9 +173,15 @@
 }
 
 //About Page
-#about, 
+#about {
+  &.wrapper {
+    position: relative;
+    min-height: 100%;
+    min-height: calc(100% - 368px);
+  }
+} 
+//Contact Page
 #contact {
-  
 }
 
 //Services Page

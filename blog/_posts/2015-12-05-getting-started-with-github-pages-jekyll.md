@@ -1,7 +1,7 @@
 ---
 title: Getting Started with Jekyll & Github Pages
 tags: [jekyll, blog, web, liquid, markdown, hosting]
-image: github_repo.png
+image: github_jekyll.png
 ---
 
 Static websites are nothing new, neither are the generators that can be used to quickly deploy a site. So why did I decide to make the switch?

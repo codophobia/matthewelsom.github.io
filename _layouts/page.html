@@ -8,7 +8,7 @@ layout: base
   {% else %}
   {% endunless %}
   {{ content }} 
+  {% if  page.category == 'portfolio' %}
+    {% include portfolio_grid.html %}  
+  {% endif %}
 </div>
-{% if  page.category == 'portfolio' %}
-  {% include portfolio_grid.html %}  
-{% endif %}

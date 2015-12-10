@@ -184,6 +184,18 @@
 #contact {
 }
 
+//Blog Page
+#blog {
+  .post {
+    padding: $base-spacing 0;
+    border-bottom: 1px dashed $light-gray;
+    
+    &:first-of-type {
+      padding-top: 0;
+    }
+  }
+}
+
 //Services Page
 #services {
   

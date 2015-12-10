@@ -17,7 +17,7 @@ $tri-col: 860px;
 
 
 .grid {
-  padding: null null $base-spacing null;
+  padding: $base-spacing 0;
 }
 
 .grid-items {
@@ -25,6 +25,7 @@ $tri-col: 860px;
   
   .grid-item {
     height: 200px;
+    border-bottom: none !important;
     
     @include media($medium-screen) {
       height: 280px;
@@ -53,6 +54,7 @@ $tri-col: 860px;
   }
   .grid-item p.context {
     display: none;
+    font-size: $base-font-size;
     
     @include media($tri-col) {
       display: block;

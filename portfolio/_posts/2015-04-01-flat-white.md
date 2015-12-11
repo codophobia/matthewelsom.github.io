@@ -6,13 +6,9 @@ hero: hero_FW.png
 
 grid-image-trans: flatwhite_trans.png
 grid-image: flatwhite.png
-
-type: modal
-modal-link: show
-modal-label: flatwhite
-modal-title: Update in progress!
-modal-content: Flat white is undergoing a make-over, you'll be able to see the new look <a href="http://flatwhitedurham.co.uk" class="text ext" target="_blank">here</a> soon.
 ---
+
+{{ site.data.alerts.update }}
 
 Opened in 2010, Flat White quickly became a haven for the coffee seeker of the North. The quaint coffee shop lies tucked away through a quiet archway just off Elvet Bridge in Durham's city centre.
 

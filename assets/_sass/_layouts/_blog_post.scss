@@ -1,5 +1,7 @@
 #blog {
   article {
+    padding-bottom: $base-spacing;
+    
     @include media($medium-screen) {
       @include span-columns(8 of 12);
     }

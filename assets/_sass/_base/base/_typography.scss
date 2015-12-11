@@ -163,26 +163,6 @@ hr {
 	width: $base-spacing * 2;
 }
 
-figure {
-  @include margin(1em 2em);
-  position: relative;
-  
-  figcaption {
-  	@include position(absolute, null null 3.5em 0);
-	@include padding($base-spacing/2);
-	@include transition(opacity 0.1s linear);
-	color: white;
-	opacity: 0;
-	font-weight: bold;
-	font-size: 0.8em;
-	background: transparentize($blue, 0.1);
-  }
-  &:hover > figcaption {
-//  	@include media($tablet-screen) {
-//		opacity: 1;
-//	}
-  }
-}
 img,
 picture {
   margin: 0;
@@ -213,6 +193,17 @@ code {
 	padding: .1em .4em;
 	font-size: .8em;
 	font-style: normal;
+}
+
+.alert {
+  color: $red;
+  border-left: 3px solid $red;
+  padding-left: $base-padding;
+  margin: $base-padding 0;
+  
+  h4 {
+    color: $red;
+  }
 }
 
 ::selection {

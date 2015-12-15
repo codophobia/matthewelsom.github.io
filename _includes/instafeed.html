@@ -5,6 +5,14 @@
 
 <script src="{{ site.baseurl }}/assets/js/libs/instafeed.js"></script>
 <script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'awesome',
+        clientId: '02b47e1b98ce4f04adc271ffbd26611d',
+    });
+    feed.run();
+</script>
+<script type="text/javascript">
   var userFeed = new Instafeed({
     get: 'user',
     userId: '623597756',

@@ -9,19 +9,19 @@ exclude: true
   {% assign sorted_portfolio = site.posts | sort: 'url' | where: "category", "portfolio" %}
    {% for page in sorted_pages %}{% if page.exclude != true %}
     <url>
-      <loc>{{ site.siteurl }}{{ site.baseurl }}{{ page.url | remove: "index.html" }}</loc>
+      <loc>{{ site.siteurl }}{{ site.baseurl }}{{ page.url }}</loc>
         <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
       <changefreq>monthly</changefreq>
         <priority>0.3</priority>
     </url>{% endif %}{% endfor %}{% for post in sorted_blog %}{% if post.exclude != true %}
     <url>
-      <loc>{{ site.siteurl }}{{ site.baseurl }}{{ post.url | remove: "index.html" }}</loc>
+      <loc>{{ site.siteurl }}{{ site.baseurl }}{{ post.url }}</loc>
         <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
       <changefreq>weekly</changefreq>
         <priority>0.4</priority>
     </url>{% endif %}{% endfor %}{% for project in sorted_portfolio %}{% if project.exclude != true %}
     <url>
-      <loc>{{ site.siteurl }}{{ site.baseurl }}{{ project.url | remove: "index.html" }}</loc>
+      <loc>{{ site.siteurl }}{{ site.baseurl }}{{ project.url }}</loc>
         <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
       <changefreq>monthly</changefreq>
         <priority>0.3</priority>

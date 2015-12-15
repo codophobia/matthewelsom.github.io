@@ -200,12 +200,13 @@ pre {
   }
 }
 code {
-	background: lighten($base-background-color, 10%);
-	border: 1px solid darken($base-background-color, 10%);
-	border-radius: $base-border-radius /2;
-	padding: .2em $small-spacing;
-	font-size: $small-font-size;
-	font-style: normal;
+  background: lighten($base-background-color, 10%);
+  border: 1px solid darken($base-background-color, 10%);
+  border-radius: $base-border-radius /2;
+  padding: .2em $small-spacing;
+  font-size: $small-font-size;
+  font-style: normal;
+  white-space: pre;
 }
 
 .alert {

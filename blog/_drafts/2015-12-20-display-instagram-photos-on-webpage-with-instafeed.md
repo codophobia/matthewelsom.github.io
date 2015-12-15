@@ -68,20 +68,5 @@ If you are building your site in Jekyll make sure you wrap your template with th
 Here is a sample feed, it shows my last 5 Instgram posts
 
 
-<div id="samplefeed"></div>
-<script src="{{ site.baseurl }}/assets/js/libs/instafeed.min.js"></script>
-<script type="text/javascript">
-  var userFeed = new Instafeed({
-    get: 'user',
-    userId: '623597756',
-    clientId: '02b47e1b98ce4f04adc271ffbd26611d',
-    accessToken: '623597756.02b47e1.3dbf3cb6dc3f4dccbc5b1b5ae8c74a72',
-    target: 'samplefeed',
-    resolution: 'thumbnail',
-    template: {% raw %}'<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a>'{% endraw %},
-    sortBy: 'most-recent',
-    limit: 5,
-    links: false
-  });
-  userFeed.run();
-</script>
+<p data-height="300" data-theme-id="0" data-slug-hash="zrrrLN" data-default-tab="result" data-user="matthewelsom" class='codepen'>See the Pen <a href='http://codepen.io/matthewelsom/pen/zrrrLN/'>Sample Instagram Feed with Instafeed.js </a> by Matthew Elsom (<a href='http://codepen.io/matthewelsom'>@matthewelsom</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>

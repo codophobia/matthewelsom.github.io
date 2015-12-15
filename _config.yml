@@ -17,6 +17,9 @@ baseurl:
 #Permalinks
 permalink: none
 
+##Markdown Helper
+markdown: redcarpet
+
 #sass import directory
 sass:
   sass_dir: assets/_sass

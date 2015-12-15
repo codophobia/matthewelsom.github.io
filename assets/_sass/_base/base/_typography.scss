@@ -185,13 +185,26 @@ cite {
   }
 }
   
+pre {
+  background: lighten($base-background-color, 10%);
+  border: 1px solid darken($base-background-color, 10%);
+  border-radius: $base-border-radius /2;
+  padding: $small-spacing;
+  overflow: auto;
+  
+  code {
+    padding: 0;
+    border-radius: 0;
+    background: none;
+    border: none;
+  }
+}
 code {
-	white-space: nowrap;
-	background: #F7F7F7;
-	border: 1px solid #E0E0E0;
-	border-radius: $base-border-radius * 1.5;
-	padding: .1em .4em;
-	font-size: .8em;
+	background: lighten($base-background-color, 10%);
+	border: 1px solid darken($base-background-color, 10%);
+	border-radius: $base-border-radius /2;
+	padding: .2em $small-spacing;
+	font-size: $small-font-size;
 	font-style: normal;
 }
 

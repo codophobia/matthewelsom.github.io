@@ -17,8 +17,8 @@ baseurl:
 #Permalinks
 permalink: none
 
-##Markdown Helper
-markdown: redcarpet
+#Set Syntax Highlighter
+highlighter: pygments
 
 #sass import directory
 sass:

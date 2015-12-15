@@ -47,9 +47,9 @@ There are a couple of ways to gte the token (explained [here](https://www.instag
 
 **Step One:**
 
-```
+{% highlight html %}
 https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=token
-```
+{% endhighlight %}
 
 1. Paste the above URL into your browser
 2. Replace **CLIENT-ID** with your client's generated ID
@@ -58,9 +58,9 @@ https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDI
 
 **Step Two:**
 
-```
+{% highlight html %}
 http://your-redirect-uri#access_token=ACCESS-TOKEN
-```
+{% endhighlight %}
 
 1. The URL will load and you will see the Access Token included in the page URL
 2. Copy the **ACCESS-TOKEN** from the URL for use in your javascript application

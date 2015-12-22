@@ -1,7 +1,7 @@
 ---
 title: Display Instagram Posts on a Webpage with Instafeed.js
 tags: [app, html5, javascript]
-image: github_jekyll.png
+image: instagram_feed.png
 ---
 
 Instafeed is a simple javascript plugin that enables you to add Instagram photos to your website. I have my Instagram feed configured [here](/about), here's how I set it up.
@@ -65,7 +65,7 @@ If you are building your site in Jekyll make sure you wrap your template with th
 
 ###Sample Feed 
 
-Here is a sample feed, it shows my last 5 Instgram posts
+Here is a sample feed, it shows my last 4 Instgram posts
 
 
 <p data-height="300" data-theme-id="0" data-slug-hash="zrrrLN" data-default-tab="result" data-user="matthewelsom" class='codepen'>See the Pen <a href='http://codepen.io/matthewelsom/pen/zrrrLN/'>Sample Instagram Feed with Instafeed.js </a> by Matthew Elsom (<a href='http://codepen.io/matthewelsom'>@matthewelsom</a>) on <a href='http://codepen.io'>CodePen</a>.</p>

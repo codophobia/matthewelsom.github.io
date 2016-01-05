@@ -61,16 +61,6 @@
     @include media($large-screen) {
       width: 20%;
     }
-    @include media($extended-screen) {
-      width: 12.5%;
-      
-      &:nth-child(20),
-      &:nth-child(19),
-      &:nth-child(18),
-      &:nth-child(17){
-        display: none;
-      }
-    }
     span {
       position: absolute;
       bottom: 0;

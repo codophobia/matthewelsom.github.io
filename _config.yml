@@ -13,6 +13,9 @@ google_analytics: UA-19247091-2
 #Commenting via Disqus
 disqus_shortname: matthewelsom
 
+#Facebook Sharing
+facebook_app_id: 1551038251882641
+
 #URL Prefixing
 siteurl: http://matthewelsom.com
 baseurl: 

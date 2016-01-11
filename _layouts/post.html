@@ -7,6 +7,7 @@ layout: base
     <h1>{{ page.title }}</h1> 
     <ul class="tags">{% for tag in page.tags %}<li>{{ tag }}</li>{% endfor %}</ul>
     {{ content }}
+<!--    {% include share.html %}-->
   </article>  
   <aside>
     {% include blog_latest.html %}

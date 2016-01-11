@@ -2,6 +2,7 @@
 title: Short Pants Party
 tags: [branding, print]
 excerpt: A dead good party from Tokyo.
+hero: hero_SP.png
 
 grid-image-trans: spp_trans.png
 grid-image: spp.png

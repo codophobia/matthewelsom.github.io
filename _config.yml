@@ -33,13 +33,15 @@ defaults:
     values:
       layout: "portfolio"
       category: "portfolio"
+      adv_meta: "yes"
   -
     scope:
       path: "blog" # an empty string here means all files in the project
       type: "posts" # previously `post` in Jekyll 2.2.
     values:
       layout: "post"
-      category: "blog"    
+      category: "blog"
+      adv_meta: "yes"
   -
     scope:
       path: ""

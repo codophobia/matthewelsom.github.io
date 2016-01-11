@@ -1,3 +1,5 @@
+$super-screen: 1500px;
+
 #project {
   article {
     padding-bottom: $base-spacing;
@@ -28,33 +30,13 @@
   } // End aside
 } // End section.project
 .project-head {
-  @include position(relative, 0);
-  @include size(100% 16em);
-  background: whitesmoke;
-  display: block;
-  z-index: -1;
-  @include media($small-screen) {
-    @include size(100% 20em);
+  display: none;
+  
+  img {
+    width: 100%;
   }
-  .holder {
-    @include position(relative, 0 0 null null);
-    @include size(100% 16em);
-    overflow: hidden;
-    @include media($small-screen) {
-      top: 0!important;
-    }
-    @include media($small-screen) {
-      @include position(fixed, 0 0 null null);
-      @include size(100% 20em);
-    }
-    img {
-      @include position(absolute, 50% null null 50%);
-      @include size(auto 100%);
-      @include transform(translate(-50%, -50%));
-      max-width: none;
-      @include media($medium-screen) {
-        @include size(100% auto);
-      }
-    }
+  
+  @include media($super-screen) {
+    display: block;
   }
 }

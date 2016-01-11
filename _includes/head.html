@@ -3,9 +3,16 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{% if page.title %}{{ page.title }} | {{ site.site_title }}{% else %}{{ site.site_title }}{% endif %}</title>
-<meta name="keywords" content="{{page.tags}}{% if page.tags %}, {% endif %} {% if page.keywords %}{{page.keywords}}{% else %}{{ site.site_keywords}}{% endif %}">
-<meta name="description" content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.site_description }}{% endif %}">
+<meta name="keywords" content="{% if page.tags %}{% for tag in page.tags %} {{ tag }}, {% endfor %}{% endif %} {% if page.keywords %}{{page.keywords}}{% else %}{{ site.site_keywords}}{% endif %}">
+<meta name="description" content="{% if page.adv_meta == 'yes' %}{{ page.content | strip_html | strip_newlines | truncate: 300 }}{% else %}{{ site.site_description}}{% endif %}">
 <meta name="author" content="{{ site.site_author }}">
+
+<meta property="og:url"          content="{{ site.siteurl }}{{ site.sitebaseurl }}/{{ page.url }}" />
+<meta property="og:type"         content="article" />
+<meta property="og:title"        content="{{ page.title }}" />
+<meta property="og:description"  content="{% if page.adv_meta == 'yes' %}{{ page.content | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.site_description}}{% endif %}" />
+<meta property="og:image"        content="{% if page.image %}{{ site.siteurl }}{{ site.sitebaseurl }}/blog/blog_img/{{ page.image }}{% elsif page.grid-image %}{{ site.siteurl }}{{ site.sitebaseurl }}/portfolio/portfolio_img/grid/{{ page.grid-image }}{% else %}{{ site.siteurl }}{{ site.sitebaseurl }}/assets/img/branding/site_logo.png{% endif %}" />
+
 <link href="{{ site.siteurl }}{{ site.baseurl }}/feed.xml" rel="alternate" type="application/rss+xml" title="matthewelsom.com RSS Feed" />
 
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">

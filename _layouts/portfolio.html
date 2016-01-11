@@ -10,6 +10,7 @@ layout: base
     <ul class="tags">{% for tag in page.tags %}<li>{{ tag }}</li>{% endfor %}</ul>
     {{ content }}
     {% include share.html %}
+    {% include comment.html %}
   </article>  
   <aside>
     {% include portfolio_latest.html %}

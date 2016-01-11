@@ -10,6 +10,9 @@ port: 5555
 #Google Analytics ID, auto populated to all pages
 google_analytics: UA-19247091-2
 
+#Commenting via Disqus
+disqus_shortname: matthewelsom
+
 #URL Prefixing
 siteurl: http://matthewelsom.com
 baseurl: 

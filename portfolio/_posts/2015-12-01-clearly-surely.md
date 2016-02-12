@@ -12,7 +12,7 @@ Get Clear, Be Sure. Clearly Surely is an insurance information and comparrison s
 
 I originally connected up with the Clearly Surely guys via [Upwork](https://www.upwork.com) a platform that connects freelancers to potential clients. After working with them on some minor touch-up work they asked if I could look at creating a brand and web design for their new venture in Singapore.
 
-###Branding
+### Branding
 The process began with exploring the brand values and the service offering, the site's selling point is to provide a single access point for users to find insurance explaination, comparison and discussion. 
 
 Clearly Surely was trying to grab attention, and stand-out in a generally conservative, corporate and bland insurance market. Exploring the mix and blend of bold color was the starting point 

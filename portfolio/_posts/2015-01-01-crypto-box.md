@@ -12,7 +12,7 @@ Crypto Box is a digital currency portfolio manager, providing investment opportu
 
 Looking for a eye-catching brand and a witty logo, I have worked with the team to create branding and a simple web introduction page.
 
-###Design
+### Design
 
 A bold palette of colours mixed with fun flat iconography set this brand apart from other digital currency portfolio management companies.
 

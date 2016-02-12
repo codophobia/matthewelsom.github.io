@@ -12,7 +12,7 @@ Worldcoin is an investment platform. They enable users to dabble in digital curr
 
 I was initially approached to work alongside the marketing team to come up with an interesting brand for Worldcoin, the partnership soon evolved beyond an identity and into website user interface.
 
-####Branding
+#### Branding
 The brand concept for Worldcoin aims to emphasise the simplistic nature of digital currency investment.
 
 The logo has been designed to represent the brand tag line "the world in your wallet".

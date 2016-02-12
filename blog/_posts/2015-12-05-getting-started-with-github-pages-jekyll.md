@@ -12,7 +12,7 @@ Thats the basic approach for all static generators; write in simple plain text, 
 
 This site is compiled using [Jekyll](http://jekyllrb.com), and is hosted for **free** with [GitHub Pages](https://pages.github.com/).
 
-###Why did I choose this development method?
+### Why did I choose this development method?
 
 Firstly I like to keep source code on Github... And I was manually transferring code to my server via FTP [(Cyberduck)](https://cyberduck.io). 
 
@@ -24,7 +24,7 @@ Unfortunately, I never managed to setup automated deployment or a webhook to do 
 
 So, using Jekyll to simplfy the deployment of my site, coupled with the built-in hosting that Github Pages provides has radically improved my deployment workflow. 
 
-###Setting up Github Pages Hosting via Github
+### Setting up Github Pages Hosting via Github
 
 This part is super easy, creating a repository named *username*.github.io, where *username* is your Github username is pretty much all that is required - The content inside the `master` branch of my repository *matthewelsom*.github.io will automaticaly be displayed at the [matthewelsom.github.io](http://matthewelsom.github.io) URL. 
 
@@ -34,7 +34,7 @@ Every commit to the master will be reflected pretty much instantly on the site.
 
 Goodbye FTP. Hello `git push`.
 
-###Getting a Custom Domain
+### Getting a Custom Domain
 
 Of course I wanted to retain my [matthewelsom.com](http://matthewelsom.com) domain name, so I added a `CNAME` file to the repository and added an `Alias` record to the domain via my DNS provider.
 
@@ -45,7 +45,7 @@ My repository is now being published at my custom domain.
 ![Published!](blog_img/published_repo.png)
 
 
-###Installing Jekyll
+### Installing Jekyll
 
 This is an ever expanding topic, so I will aim to post more about this in the future.
 

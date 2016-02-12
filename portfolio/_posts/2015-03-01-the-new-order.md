@@ -12,19 +12,19 @@ The New Order is a beautifully crafted and curated print magazine hailing from T
 
 After the success of the print edition I was engaged by the magazine owners to provide consultation and create a simple and clean user interface for their step into the digital world.
 
-###Strategy &amp; Design
+### Strategy &amp; Design
 
-####Main Navigation
+#### Main Navigation
 A Fully responsive web design was purposed, it featured a lightweight grid based structure with a mute palette of styles.
 
 ![TNO: Main Navigation](portfolio_img/neworder/new-order-nav.jpg)
 
-####Homepage
+#### Homepage
 Maintaining a 'blank' canvas was important when designing this site, it was critical that the quality of the magazine content shone through the UI and provided the reader with a tactile experience.
 
 ![TNO: Homepage](portfolio_img/neworder/new-order-hp01.jpg)
 
-####Blog
+#### Blog
 As the site would be run using a [Wordpress](https://wordpress.com/) CMS, the decision was taken to use a dynamic CSS &amp; JS approach to create high-resolution image crops. This enabled the site to fit all devices with minimum load time.
 
 ![TNO: Blog](portfolio_img/neworder/new-order-blog.jpg)

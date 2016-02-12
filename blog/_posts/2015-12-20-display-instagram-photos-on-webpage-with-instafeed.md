@@ -8,7 +8,7 @@ Instafeed is a simple javascript plugin that enables you to add Instagram photos
 
 You'll need to register your website as an application with Instagram and get an Access Token before you start - Instagram has recently changed the process, but it is quite straight-forward, just follow the steps [here](/blog/request-access-token-instagram.html).
 
-###Setup
+### Setup
 
 I wanted to create an Instagram Feed on my About page - the feed would pull the latest *Images* with respective *URLs* from my IG account, I also wanted to show the *Like* count and *Comment* count to go with each image.
 
@@ -20,7 +20,7 @@ The include used on my About page:
 {% include instafeed.html %}
 {% endraw %}{% endhighlight %}
 
-###Installation
+### Installation
 
 - To start, download the Instafeed.js plugin [from Github](https://github.com/stevenschobert/instafeed.js) and include it in your website assets
 - Above the script add `<div id="instafeed"></div>`, the plugin will automatially look for this element and fill it with your thumbnails.
@@ -55,7 +55,7 @@ The include used on my About page:
 </script>
 {% endhighlight %}
 
-###Adding a Template
+### Adding a Template
 
 The template function allows you to customise the output for each image. A full list of template options are [available here](https://github.com/stevenschobert/instafeed.js#templating).
 
@@ -63,7 +63,7 @@ For my template I wrapped each image inside an `<a>` tag that linked to the orig
 
 If you are building your site in Jekyll make sure you wrap your template with the `{{ "{% raw " }}%}` and `{{ "{% endraw " }}%}` tags - this prevents the liquid language from being interupted by Jekyll.
 
-###Sample Feed 
+### Sample Feed 
 
 Here is a sample feed, it shows my last 4 Instgram posts
 

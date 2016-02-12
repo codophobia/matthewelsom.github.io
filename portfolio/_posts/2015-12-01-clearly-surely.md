@@ -23,7 +23,7 @@ Several iterations later, a geometric identity was chosen to represent the brand
 
 ![CS Brand](portfolio_img/clearlysurely/cs_brand.png)
 
-###Website User Interface
+### Website User Interface
 
 Following on from the brand a web interface was created, the interface mapped all of the key views in the site with the layout designed to fit inside the commonly used [Bootstrap](http://getbootstrap.com/) framework.
 
@@ -31,13 +31,13 @@ Following on from the brand a web interface was created, the interface mapped al
 
 ![CS Results](portfolio_img/clearlysurely/CS_desktop_Compare_Results_Endowment.png)
 
-####Smartphone Interface
+#### Smartphone Interface
 
 The design was provided for desktops and for smartphone devices.
 
 ![CS Mobile](portfolio_img/clearlysurely/CS_mobile_Homepage.png)
 
-###Execute
+### Execute
 
 Clearly Surely was developed and implemented by a 3rd Party vendor.
 Full Flat Artwork, Branding and a Styleguide was provided.

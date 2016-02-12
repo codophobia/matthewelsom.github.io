@@ -12,7 +12,7 @@ My collaboration with InnoCellence began in early 2013 - working alongside a glo
 
 ![InnoCellence name cards](portfolio_img/innocellence/IC_bg.jpg)
     
-###Identity
+### Identity
 
 The original InnoCellence brand concept represents the convergence of Innovation & Excellence, although the logo concept was sound, the identity lacked foresight and easily became dated.
 
@@ -22,7 +22,7 @@ Introducing a refreshed logo, and defining a full set of corporate guidelines en
 
 Download the full guideline [here](portfolio_img/innocellence/InnoCellence_Identity-Guidelines_1.0.pdf).
 
-###Execute
+### Execute
 
 InnoCellence is passionate about digital innovation and it's ability to enhance the business operations of their clients.
 
@@ -30,7 +30,7 @@ With a focus on the healthcare and pharmaceutical industry - It has been critica
 
 User experience also sits at the company's heart. We have integrated a strong UI & UX strategy throughout our innovation process which is supported by a foundation of advanced UX guidelines, user research, heuristic review, rapid prototyping and usability testing methods.
 
-###Online Presence
+### Online Presence
 
 Creating an updated web experience has been an important part of the brand refresh for InnoCellence. A new marketing campaign has been created to drip feed the new look website with targeted articles that will lead to increased SEO performance and reinforce the brand values. 
 

@@ -6,7 +6,7 @@ image: instagram_access_token.png
 
 Instagram recently changed their API, introducing new restrictions and a permissions process. I had to re-register my Instagram client and get a new Access Token to use the API to show my own Instagram Feed [here](/about).
 
-###Registering the Client
+### Registering the Client
 
 First I needed to register my application with [Instagram](https://www.instagram.com/developer/), in my case I am registering my website and I will be using a javascript plugin called [instafeed.js](http://instafeedjs.com/) to call the API and retrieve my images. 
 
@@ -39,7 +39,7 @@ To switch the status of the client to **Live**, you need to submit the client fo
 
 Here you will need to provide supporting information to Instagram about how the API will be used. 
 
-###Client-Side Authentication (Authorizing and Getting the Token)
+### Client-Side Authentication (Authorizing and Getting the Token)
 
 To retrieve data via the API you will need to use an Access Token, this is a unique token speific to a user. 
 

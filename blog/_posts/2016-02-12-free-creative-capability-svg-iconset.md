@@ -12,7 +12,7 @@ This icon set aims to illustrate some key creative capabilities and deliverables
 
 Download the package below to use them in your projects.
 
-###The Package
+### The Package
 
 - 14 Vector-based icons
 - Fully customizable

@@ -12,7 +12,7 @@ Founded in 2010, Short Pants Party pulled together odd-ball Tokyo DJs, live inde
 
 ![Short Pants Party](portfolio_img/shortpantsparty/spp_logo.png)
 
-###Design
+### Design
 
 A bold and simplicitic logo was chosen to represent the brand on all promotional materials, it's flexible, recognisable, and really easy to work with in many various formats.
 

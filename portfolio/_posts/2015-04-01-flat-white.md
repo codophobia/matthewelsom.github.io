@@ -16,7 +16,7 @@ The owners of Flat White approached me to work on crafting their identity, and O
 
 ![Flat White loyalty cards](portfolio_img/flatwhite/FW_cards.jpg)
    
-###Digital Strategy
+### Digital Strategy
 
 A new fully responsive and mobile-friendly Flat White web site with a fresh new look is on it's way.
 
@@ -25,7 +25,7 @@ Over 75% of visitors connected via their Smart-phone or Tablet, plugging the hol
 New site features will include: **enhanced location services**, and an **expanded menu design**.
 
 
-###Execute
+### Execute
 A mobile-first build strategy has been used in the re-design of the site, a semantic [SASS](http://sass-lang.com/) based grid has been used for layout.
 
 Below you can see the previous version of the website.

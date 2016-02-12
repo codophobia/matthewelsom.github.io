@@ -3,9 +3,9 @@ title:
 category: home
 ---
 
-<h1>Hi, I'm Matthew...</h1>
+# Hi, I'm Matthew...
 
-<p>I design and create <br><a href="{{ site.baseurl }}/about/index.html" id="typed">websites.</a></p>
+I design and create <br><a href="{{ site.baseurl }}/about/index.html" id="typed">websites.</a>
 
 <a class="cta" href="{{ site.baseurl }}/about/index.html" title="About Me">Find out more</a>
 

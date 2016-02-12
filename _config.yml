@@ -24,7 +24,10 @@ baseurl:
 permalink: none
 
 #Set Syntax Highlighter
-#highlighter: rouge
+highlighter: rouge
+
+#encoding
+encoding: UTF-8
 
 #sass import directory
 sass:

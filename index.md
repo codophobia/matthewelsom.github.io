@@ -13,7 +13,7 @@ I design and create <br><a href="{{ site.baseurl }}/about/index.html" id="typed"
 <script>
   //Typed
   $("#typed").typed({
-    strings: ["websites.", "enterprise IT solutions", "dynamic prototypes", "mobile applications", "corporate identities"],
+    strings: ["websites.", "enterprise IT solutions.", "dynamic prototypes.", "mobile applications.", "corporate identities.", "creative strategies."],
     contentType: 'text',
     typeSpeed: 50,
     startDelay: 100,

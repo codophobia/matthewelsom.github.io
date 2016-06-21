@@ -5,7 +5,7 @@
     {% for post in sorted_posts | limit: 3 %}
     <li class="{{ post.category }}">
       <a href="{{ post.url }}">
-        <img {% if post.category == 'portfolio' %}src="{{ site.baseurl }}/portfolio/portfolio_img/grid/{{ post.grid-image }}"{% else %}src="{{ site.baseurl }}/blog/blog_img/{{ post.image }}"{% endif %}>
+        <img {% if post.category == 'portfolio' %}src="{{ site.baseurl }}/portfolio/portfolio_img/grid/{{ post.grid-image }}"{% else %}src="{{ site.baseurl }}/blog/blog_img/hero/{{ post.image }}"{% endif %}>
         <div class="inner">
           <div class="post-category">{% if post.category == 'portfolio' %}Portfolio{% elsif post.category == 'blog' %}Blog{% else %}{% endif %}</div> 
           <h3 class="post-title">{{ post.title }}</h3>

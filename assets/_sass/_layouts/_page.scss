@@ -192,12 +192,68 @@
 //Blog Page
 #blog {
   .post {
+    @include display(flex);
+    @include flex-wrap(wrap);
     padding: $base-spacing 0;
     border-bottom: 1px dashed $light-gray;
     
     &:first-of-type {
       padding-top: 0;
     }
+  }
+  .post-image {
+    @include flex(1 1 auto);
+    position: relative;
+    margin-bottom: $base-spacing;
+    border-bottom: 0;
+    
+    @include media($medium-screen) {
+      @include flex(0 0 280px);
+      margin-right: $base-spacing;
+      margin-bottom: 0;
+    }
+    
+    .latest {
+      position: absolute;
+      top: $base-padding;
+      left: -2px;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: $small-font-size;
+      background: white;
+      color: $red;
+      padding: $small-spacing / 2 $small-spacing;
+      border-top-right-radius: $base-border-radius;
+      border-bottom-right-radius: $base-border-radius;
+      box-shadow: 1px 1px 2px transparentize(black, 0.5);
+      opacity: 1;
+    }
+    img {
+      display: block;
+    }
+    &:before {
+      @include position(absolute, 0 0 0 0);
+      content: '';
+      @include size(100%);
+      background: transparentize(black, 0.5);
+      opacity: 0;
+      @include transition(all $base-duration $base-timing);
+    }
+    &:hover,
+    &:focus {
+      &:before {
+        opacity: 0.4;
+      }
+    }
+  }
+  .post-container {
+    @include flex(1);
+    
+    @include media($medium-screen) {
+    }
+  }
+  .post-title {
+    margin-top: 0;
   }
 }
 

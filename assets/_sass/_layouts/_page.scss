@@ -230,17 +230,23 @@
     }
     img {
       display: block;
+      @include transition(all $base-duration $base-timing);
+      z-index: 1;
     }
     &:before {
       @include position(absolute, 0 0 0 0);
       content: '';
       @include size(100%);
-      background: transparentize(black, 0.5);
+      background: transparentize($blue, 0.2);
       opacity: 0;
+      z-index: 2;
       @include transition(all $base-duration $base-timing);
     }
     &:hover,
     &:focus {
+      img {
+        @include filter(grayscale(100%));
+      }
       &:before {
         opacity: 0.4;
       }

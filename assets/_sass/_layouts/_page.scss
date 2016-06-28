@@ -98,6 +98,7 @@
       }
       .post-title {
         color: white;
+        @include transition(all $base-duration $base-timing);
       }
       .post-category {
         display: inline-block;
@@ -140,6 +141,9 @@
         .post-content {
           opacity: 0;
           @include transform(translateY(50%));
+        }
+        .post-title {
+          margin-top: -$base-padding;
         }
         .post-category {
           opacity: 0;

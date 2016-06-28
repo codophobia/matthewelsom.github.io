@@ -10,7 +10,7 @@ View this page in [.xml]({{ site.baseurl}}/sitemap.xml) format.
 {% assign sorted_portfolio = site.posts | sort: 'url' | where: "category", "portfolio" %}
 <h4>matthewelsom.com</h4>
 <ul>{% for page in sorted_pages %}{% if page.exclude != true %}
-  <li><a href="{{ site.baseurl }}{{ page.url | remove: "index.html" }}">{{ page.title}}</a></li>{% endif %}{% endfor %}
+  <li><a href="{{ site.baseurl }}{{ page.url | remove: "index.html" }}">{{ page.category | capitalize }}</a></li>{% endif %}{% endfor %}
 </ul>
 <h4>Blog</h4>
 <ul>{% for post in sorted_blog %}{% if post.exclude != true %}

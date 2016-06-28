@@ -1,17 +1,18 @@
 html, 
 body {
-  @include font-feature-settings("kern","liga","frac", "pnum");
+  @include font-feature-settings("kern" 1,"liga" 1,"frac" 1, "pnum" 1);
   -webkit-font-smoothing: antialiased;
   background-color: $base-background-color;
   color: $base-font-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
+  font-kerning: normal;
 }
 
 //Headings
 h1, h2, h3, h4, h5, h6 {
-  margin: $small-spacing 0;
+  margin: $base-spacing 0 $small-spacing 0;
   font-weight: 600;
   line-height: $heading-line-height;
   color: $heading-font-color;
@@ -185,29 +186,40 @@ cite {
   }
 }
   
-pre {
-  background: lighten($base-background-color, 10%);
-  border: 1px solid darken($base-background-color, 10%);
-  border-radius: $base-border-radius /2;
-  padding: $small-spacing;
-  overflow: auto;
-  
-  code {
-    padding: 0;
-    border-radius: 0;
-    background: none;
-    border: none;
-  }
-}
+pre,
 code {
-  background: lighten($base-background-color, 10%);
-  border: 1px solid darken($base-background-color, 10%);
-  border-radius: $base-border-radius /2;
-  padding: .2em $small-spacing;
-  font-size: $small-font-size;
-  font-style: normal;
+  -webkit-font-smoothing: auto;
+  padding: 0 $small-spacing;
+  display: inline-block;
+  margin: 0;
+  font-size: $base-font-size - 1px;
   white-space: pre;
+  font-family: $code-font;
 }
+.highlight {
+  background-color:#3f3f3f;
+  margin: $base-padding 0;
+  padding:  $base-padding $small-spacing;
+  width: 100%;
+  overflow: auto;
+  max-width: 100%;
+  overflow-x: auto;
+  vertical-align: middle;
+  border-radius: $base-border-radius /1.5;
+}
+
+p > pre,
+p > code,
+li > code, 
+.alert > code {
+  color: $blue;
+  background: white;
+  max-width: 100%;
+  overflow-x: auto;
+  vertical-align: middle;
+  border-radius: $base-border-radius /1.5;
+}
+
 
 .alert {
   color: $red;

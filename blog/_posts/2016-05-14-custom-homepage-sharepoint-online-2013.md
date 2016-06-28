@@ -19,9 +19,9 @@ Here's how I got it to work...
 - Within your SharePoint Online Site navigate to `Site Contents`, add a Document Library, set the library name and title to `APP`
 - You should be able to access the library via this address: 
 
-```
+{% highlight html %}{% raw %}
 https://[COMPANY_NAME].sharepoint.com/[SITE_NAME]/APP/
-```
+{% endraw %}{% endhighlight %}
 
 ![Add an App](blog_img/sharepoint_add_app.png)
 

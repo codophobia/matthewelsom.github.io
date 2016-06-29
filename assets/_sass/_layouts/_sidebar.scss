@@ -1,0 +1,16 @@
+//Sidebar 
+aside {
+  margin:  $base-spacing 0;
+  
+  @include media($medium-screen) {
+    @include span-columns(4 of 12);
+    margin: 0;
+  }
+}
+
+//Sticky Sidebar
+aside.sticky {
+  &.stuck {
+//    position: fixed;
+  }
+}

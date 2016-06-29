@@ -11,23 +11,6 @@ $super-screen: 1500px;
   .tags {
     margin-bottom: $base-padding;
   }
-  aside {
-    margin:  $base-spacing 0;
-    
-    @include media($medium-screen) {
-      @include span-columns(4 of 12);
-      margin: 0;
-    }
-    ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      
-      li {
-        margin: $small-spacing 0;
-      }
-    }
-  } // End aside
 } // End section.project
 .project-head {
   display: none;

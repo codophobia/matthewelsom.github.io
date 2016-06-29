@@ -32,6 +32,7 @@ encoding: UTF-8
 #sass import directory
 sass:
   sass_dir: assets/_sass
+  style: compressed
     
 #Default Front Matter
 defaults:

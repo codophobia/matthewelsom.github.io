@@ -1,7 +1,9 @@
-<h4>Latest Projects</h4>
-{% assign new_sorted_portfolio = site.posts | sort: 'reversed' | where: "category", "portfolio" %}
-<ul>
-  {% for project in new_sorted_portfolio %}
-  <li><a href="{{ project.url }}">{{ project.title }}</a></li>
-  {% endfor %}
-</ul>
+<div class="sidebar_latest">
+  <h4>Latest Projects</h4>
+  {% assign new_sorted_portfolio = site.posts | sort: 'reversed' | where: "category", "portfolio" %}
+  <ul>
+    {% for project in new_sorted_portfolio %}
+    <li><a href="{{ project.url }}">{{ project.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>

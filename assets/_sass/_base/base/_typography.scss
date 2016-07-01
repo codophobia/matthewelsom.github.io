@@ -202,11 +202,6 @@ code {
   border-radius: $base-border-radius /1.5;
   margin: $base-padding 0;
   padding:  $base-padding;
-//  width: 100%;
-//  max-width: 100%;
-//  overflow-x: auto;
-//  vertical-align: middle;
-//  white-space: pre;
 }
 
 :not(pre)>code {
@@ -215,6 +210,7 @@ code {
   color: $blue;
   background: white;
   vertical-align: middle;
+  padding: 0 $small-spacing;  
   border-radius: $base-border-radius /1.5;
 }
 .highlight code,
@@ -222,11 +218,6 @@ code {
   font-family: $code-font;
   font-size: $base-font-size - 1px;
   margin: 0;
-//  padding: 0 $small-spacing;
-//  display: inline-block;
-//  max-width: 100%;
-//  overflow-x: auto;
-//  white-space: pre;
 }
 
 

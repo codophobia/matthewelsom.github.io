@@ -8,6 +8,8 @@ body {
   font-size: $base-font-size;
   line-height: $base-line-height;
   font-kerning: normal;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 //Headings
@@ -186,38 +188,45 @@ cite {
   }
 }
   
+pre {
+  overflow: auto;
+}
 pre,
 code {
+  font-family: monospace, monospace;
+  font-size: 1em;
   -webkit-font-smoothing: auto;
-  padding: 0 $small-spacing;
-  display: inline-block;
-  margin: 0;
-  font-size: $base-font-size - 1px;
-  white-space: pre;
-  font-family: $code-font;
 }
 .highlight {
   background-color:#3f3f3f;
-  margin: $base-padding 0;
-  padding:  $base-padding $small-spacing;
-  width: 100%;
-  max-width: 100%;
-  overflow-x: auto;
-  vertical-align: middle;
-  font-size: $base-font-size - 1px;
   border-radius: $base-border-radius /1.5;
+  margin: $base-padding 0;
+  padding:  $base-padding;
+//  width: 100%;
+//  max-width: 100%;
+//  overflow-x: auto;
+//  vertical-align: middle;
+//  white-space: pre;
 }
 
-p > pre,
-p > code,
-li > code, 
-.alert > code {
+:not(pre)>code {
+  font-size: $base-font-size - 1px;
+  font-family: $code-font;
   color: $blue;
   background: white;
-  max-width: 100%;
-  overflow-x: auto;
   vertical-align: middle;
   border-radius: $base-border-radius /1.5;
+}
+.highlight code,
+.highlight pre {
+  font-family: $code-font;
+  font-size: $base-font-size - 1px;
+  margin: 0;
+//  padding: 0 $small-spacing;
+//  display: inline-block;
+//  max-width: 100%;
+//  overflow-x: auto;
+//  white-space: pre;
 }
 
 

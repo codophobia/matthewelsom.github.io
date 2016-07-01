@@ -78,20 +78,20 @@ function menuScroll() {
   });
 }
 
-//Sicky Sidebar
-function StickySidebar() {
-  var window_top = $(window).scrollTop();
-  var article_top = $('article').offset().top;
-  if (window_top > article_top) {
-    $('.sticky').addClass('stuck');
-  } else {
-    $('.sticky').removeClass('stuck');
-  }
-}
-$(function () {
-  $(window).scroll(StickySidebar);
-  StickySidebar();
-});
+////Sicky Sidebar
+//function StickySidebar() {
+//  var window_top = $(window).scrollTop();
+//  var article_top = $('article').offset().top;
+//  if (window_top > article_top) {
+//    $('.sticky').addClass('stuck');
+//  } else {
+//    $('.sticky').removeClass('stuck');
+//  }
+//}
+//$(function () {
+//  $(window).scroll(StickySidebar);
+//  StickySidebar();
+//});
 
 
 //Target External Links

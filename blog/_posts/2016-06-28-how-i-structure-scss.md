@@ -88,7 +88,7 @@ ___
 @import "base/__base-dir";
 
 //Components
-@import "components/__components-dir"; Test test test
+@import "components/__components-dir";
 
 //Layout
 @import "layouts/__layouts-dir";

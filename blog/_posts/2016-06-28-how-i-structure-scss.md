@@ -4,7 +4,7 @@ tags: [scss, architecture, best, practice, structure, playbook, simple, sass]
 image: scss_playbook.png
 ---
 
-Here is a quick start playbook that covers the absolute basics of pulling together various 
+Here is a quick start playbook that includes simplified Scss structure and development rules.
 
 I have spent a lot of time looking at different Sass/Scss formatting, naming, and architecture standards. The bible probably being Hugo Giraudel's [Sass Guidelines](https://sass-guidelin.es/#about-the-author) - Although very comprehensive, well maintained, and well written the standards were a little too thorough for my needs.
 

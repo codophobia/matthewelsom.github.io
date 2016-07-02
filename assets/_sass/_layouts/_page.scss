@@ -19,6 +19,7 @@
   }
   p:first-of-type {
     @extend h1;
+    font-weight: normal;
   }
   a {
     border-bottom-width: 4px;

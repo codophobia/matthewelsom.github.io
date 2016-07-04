@@ -13,7 +13,7 @@
 <meta property="og:title" content="{{ page.title }}"/>
 <meta property="og:description" content="{% if page.adv_meta == 'yes' %}{{ page.content | markdownify | strip_html | strip_newlines | truncate: 300 }}{% else %}{{ site.site_description}}{% endif %}" />
 {% if page.image %}
-<meta property="og:image" content="{{ site.siteurl }}{{ site.sitebaseurl }}/blog/hero/blog_img/{{ page.image }}"/>
+<meta property="og:image" content="{{ site.siteurl }}{{ site.sitebaseurl }}/blog/blog_img/hero/{{ page.image }}"/>
 {% elsif page.grid-image %}
 <meta property="og:image" content="{{ site.siteurl }}{{ site.sitebaseurl }}/portfolio/portfolio_img/grid/{{ page.grid-image }}"/>
 {% else %}

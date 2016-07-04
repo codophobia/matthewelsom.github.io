@@ -7,12 +7,17 @@
 <meta name="description" content="{% if page.adv_meta == 'yes' %}{{ page.content | markdownify | strip_html | strip_newlines | truncate: 300 }}{% else %}{{ site.site_description}}{% endif %}">
 <meta name="author" content="{{ site.site_author }}">
 
-<meta property="fb:app_id"       content="{{ site.facebook_app_id }}" />
-<meta property="og:url"          content="{{ site.siteurl }}{{ site.sitebaseurl }}/{{ page.url }}" />
-<meta property="og:type"         content="article" />
-<meta property="og:title"        content="{{ page.title }}" />
-<meta property="og:description"  content="{% if page.adv_meta == 'yes' %}{{ page.content | markdownify | strip_html | strip_newlines | truncate: 300 }}{% else %}{{ site.site_description}}{% endif %}" />
-<meta property="og:image"        content="{% if page.image %}{{ site.siteurl }}{{ site.sitebaseurl }}/blog/blog_img/{{ page.image }}{% elsif page.grid-image %}{{ site.siteurl }}{{ site.sitebaseurl }}/portfolio/portfolio_img/grid/{{ page.grid-image }}{% else %}{{ site.siteurl }}{{ site.sitebaseurl }}/assets/img/branding/site_logo.png{% endif %}" />
+<meta property="fb:app_id" content="{{ site.facebook_app_id }}"/>
+<meta property="og:url" content="{{ site.siteurl }}{{ site.sitebaseurl }}/{{ page.url }}"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="{{ page.title }}"/>
+<meta property="og:description" content="{% if page.adv_meta == 'yes' %}{{ page.content | markdownify | strip_html | strip_newlines | truncate: 300 }}{% else %}{{ site.site_description}}{% endif %}" />
+{% if page.image %}
+<meta property="og:image" content="{{ site.siteurl }}{{ site.sitebaseurl }}/blog/hero/blog_img/{{ page.image }}"/>
+{% elsif page.grid-image %}
+<meta property="og:image" content="{{ site.siteurl }}{{ site.sitebaseurl }}/portfolio/portfolio_img/grid/{{ page.grid-image }}"/>
+{% else %}
+<meta property="og:image" content="{{ site.siteurl }}{{ site.sitebaseurl }}/assets/img/branding/site_logo.png{% endif %}"/>
 
 <link href="{{ site.siteurl }}{{ site.baseurl }}/feed.xml" rel="alternate" type="application/rss+xml" title="matthewelsom.com RSS Feed" />
 

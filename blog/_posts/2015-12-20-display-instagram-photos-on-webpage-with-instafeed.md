@@ -6,7 +6,7 @@ image: instagram_feed.png
 
 {{ site.data.alerts.update-blank }}
 <h4>Update!</h4>
-This article has been <a href="#update-user-details">updated</a> with a method for showing the user details on each photo.
+This article has been updated with a method for showing the user details on each photo. Click <a href="#update-user-details">here</a> to see the example.
 {{ site.data.alerts.update-end }}
 
 Instafeed is a simple javascript plugin that enables you to add Instagram photos to your website. I have my Instagram feed configured [here](/about), here's how I set it up.

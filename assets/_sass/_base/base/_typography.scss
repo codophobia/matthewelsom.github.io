@@ -232,7 +232,7 @@ code {
   }
   a {
     color: $red !important;
-    border-bottom-color: $red;
+    border-bottom-color: $red !important;
   }
 }
 

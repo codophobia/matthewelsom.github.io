@@ -5,7 +5,7 @@ image: instagram_feed.png
 ---
 
 {{ site.data.alerts.update-blank }}
-<h4>Update!</h4>
+<h4>Update: 11 Aug 2016</h4>
 This article has been updated with a method for showing the user details on each photo. Click <a href="#update-user-details">here</a> to see the example.
 {{ site.data.alerts.update-end }}
 

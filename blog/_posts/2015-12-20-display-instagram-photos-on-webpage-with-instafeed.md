@@ -4,6 +4,10 @@ tags: [app, html5, javascript]
 image: instagram_feed.png
 ---
 
+{{ site.data.alerts.update-blank }}
+This article has been <a href="#update-user-details">updated</a>.
+{{ site.data.alerts.update-end }}
+
 Instafeed is a simple javascript plugin that enables you to add Instagram photos to your website. I have my Instagram feed configured [here](/about), here's how I set it up.
 
 You'll need to register your website as an application with Instagram and get an Access Token before you start - Instagram has recently changed the process, but it is quite straight-forward, just follow the steps [here](/blog/request-access-token-instagram.html).
@@ -75,9 +79,9 @@ Here is a sample feed, it shows my last 4 Instgram posts
 
 Need to show your user details? You can use the {% raw %}`{{model.user}}`{% endraw %} fuction to do that.
 
-Username: {% raw %}`{{model.user.username}}`{% endraw %}
-Profile Picture: {% raw %}`{{model.user.profile_picture}}`{% endraw %}
-Full Name: {% raw %}`{{model.user.full_name}}`{% endraw %}
+- Username: {% raw %}`{{model.user.username}}`{% endraw %}
+- Profile Picture: {% raw %}`{{model.user.profile_picture}}`{% endraw %}
+- Full Name: {% raw %}`{{model.user.full_name}}`{% endraw %}
 
 
 <p data-height="265" data-theme-id="0" data-slug-hash="oLJGpL" data-default-tab="result" data-user="matthewelsom" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/matthewelsom/pen/oLJGpL/">Sample Instagram Feed with Instafeed.js  with User Details</a> by Matthew Elsom (<a href="http://codepen.io/matthewelsom">@matthewelsom</a>) on <a href="http://codepen.io">CodePen</a>.</p>

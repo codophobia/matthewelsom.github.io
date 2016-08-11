@@ -73,11 +73,11 @@ Here is a sample feed, it shows my last 4 Instgram posts
 
 ### Update: User Details
 
-Need to show your user details? You can use the `{{model.user}}` fuction to do that.
+Need to show your user details? You can use the {% raw %}`{{model.user}}`{% endraw %} fuction to do that.
 
-Username: `{{model.user.username}}`
-Profile Picture: `{{model.user.profile_picture}}
-Full Name: `{{model.user.full_name}}
+Username: {% raw %}`{{model.user.username}}`{% endraw %}
+Profile Picture: {% raw %}`{{model.user.profile_picture}}`{% endraw %}
+Full Name: {% raw %}`{{model.user.full_name}}`{% endraw %}
 
 
 <p data-height="265" data-theme-id="0" data-slug-hash="oLJGpL" data-default-tab="result" data-user="matthewelsom" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/matthewelsom/pen/oLJGpL/">Sample Instagram Feed with Instafeed.js  with User Details</a> by Matthew Elsom (<a href="http://codepen.io/matthewelsom">@matthewelsom</a>) on <a href="http://codepen.io">CodePen</a>.</p>

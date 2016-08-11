@@ -70,3 +70,14 @@ Here is a sample feed, it shows my last 4 Instgram posts
 
 <p data-height="300" data-theme-id="0" data-slug-hash="zrrrLN" data-default-tab="result" data-user="matthewelsom" class='codepen'>See the Pen <a href='http://codepen.io/matthewelsom/pen/zrrrLN/'>Sample Instagram Feed with Instafeed.js </a> by Matthew Elsom (<a href='http://codepen.io/matthewelsom'>@matthewelsom</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+### Update: User Details
+
+Need to show your user details? You can use the `{{model.user}}` fuction to do that.
+
+Username: `{{model.user.username}}`
+Profile Picture: `{{model.user.profile_picture}}
+Full Name: `{{model.user.full_name}}
+
+
+<p data-height="265" data-theme-id="0" data-slug-hash="oLJGpL" data-default-tab="result" data-user="matthewelsom" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/matthewelsom/pen/oLJGpL/">Sample Instagram Feed with Instafeed.js  with User Details</a> by Matthew Elsom (<a href="http://codepen.io/matthewelsom">@matthewelsom</a>) on <a href="http://codepen.io">CodePen</a>.</p>

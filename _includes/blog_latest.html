@@ -1,9 +1,14 @@
 <div class="sidebar_latest">
   <h4>Latest Posts</h4>
-  {% assign new_sorted_posts = site.posts | sort: 'reversed' | where: "category", "blog" %}
+  {% assign new_sorted_posts = site.posts | sort: 'date' | reverse | where: "category", "blog" %}
   <ul>
-    {% for post in new_sorted_posts %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% for post in new_sorted_posts limit: 5 %}
+    <li class="latest_link">
+      <a href="{{ post.url }}">
+        <img class="latest_image" src="{{ site.baseurl }}/blog/blog_img/hero/{{ post.image }}">
+        <div class="latest_title">{{ post.title | truncate: 70 }}<span class="latest_date">{{ post.date | date: '%B %d, %Y' }}</span></div>
+      </a>
+    </li>
     {% endfor %}
   </ul>
 </div>

@@ -5,8 +5,47 @@
     padding: 0;
     list-style: none;
 
-    li {
+    li.latest_link {
       margin: $small-spacing 0;
+      
+      &:first-of-type {
+        margin-top: $base-padding;
+      }
+      
+      a {
+        @include display(flex);
+        @include align-items(flex-start);
+        border: $base-border;
+        border-color: $light-gray;
+        padding: $small-spacing;
+        background: white;
+        border-radius: $base-border-radius;
+        
+        .latest_image {
+          display: none;
+          @include transition(all $base-duration $base-timing);
+          z-index: 1;
+        
+          @include media($large-screen) {
+            display: block;
+            height: 4rem;
+            margin-right: $small-spacing;
+          }
+        }
+        .latest_title {
+          span {
+            display: block;
+            font-size: .8rem;
+            color: lightgray;
+          }
+        }
+        &:hover,
+        &:focus {
+          .latest_image {
+            @include filter(grayscale(100%));
+          }
+        }
+      }
     }
   }
 }

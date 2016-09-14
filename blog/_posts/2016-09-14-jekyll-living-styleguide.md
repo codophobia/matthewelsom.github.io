@@ -1,5 +1,5 @@
 ---
-title: Simple Living Styleguide made with Jekyll
+title: A Living Styleguide made with Jekyll
 tags: [scss, styleguide, playbook, jekyll, style, guide, living, livingstyleguide.cc]
 image: jekyll_living_styleguide.png
 ---

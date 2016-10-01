@@ -418,3 +418,25 @@ Colors used within the button.scss file are defined here
 */
 
 {% endraw %}{% endhighlight %}
+
+
+{{ site.data.alerts.update-blank }}
+<h4>Fork on Github</h4>
+<p>I have added this architeture to <a href="https://github.com/matthewelsom/scss-playbook">github</a> for convienience.</p>
+
+
+<p>Note: Jekyll is used to compile the scss so the styles.scss file sits in `/css`.</p>
+
+<p>The following lines of code in the _config.yml file tell Jekyll what to compile.</p>
+
+{% highlight yml %}
+
+sass:
+sass_dir: assets/_scss # Scss location
+style: :compressed
+
+{% endhighlight %}
+
+<p>I have added a few example stylesheets to /base, /components, and /layouts too.</p>
+
+{{ site.data.alerts.update-end }}
